@@ -1,0 +1,107 @@
+#slider{
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1010px;
+    height: 338px;
+    background: #FFF;
+    overflow: hidden;
+}
+#slider-main{
+    cursor: move;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 600px;
+    height: 338px;
+    overflow: hidden;
+}
+.caption-banner{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: #101010;
+    background: rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 2px #000;
+    color:#FFF;
+    line-height: 40px;
+    padding: 0 10px;
+    border-bottom: 4px solid #d444b1;
+}
+.caption-banner p{
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+
+/*i图 t标题*/
+/* jssor slider thumbnail navigator skin 11 css */
+/*
+    .jssort11 .p            (normal)
+    .jssort11 .p:hover      (normal mouseover)
+    .jssort11 .pav          (active)
+    .jssort11 .pav:hover    (active mouseover)
+    .jssort11 .pdn          (mousedown)
+    */
+.jssort11 {
+    position: absolute;
+    width: 400px;
+    height: 338px;
+    font-family: Georgia,Times,"Times New Roman",serif;
+    font-size: 18px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+    .jssort11 .p {
+        position: absolute;
+        width: 400px;
+        height: 65px;
+        background: #b2b2b2;
+        color: #FFF;
+    }
+    .jssort11 .i, .jssort11 .pav:hover .i {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 116px;
+        height: 65px;
+        opacity: 1.0;
+    }
+    .jssort11 .i {
+        opacity: 0.5;
+    }
+    .jssort11 .t{
+        font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    }
+    .jssort11 .pav .i {
+        opacity: 1.0;
+    }
+    .jssort11 .t, .jssort11 .pav:hover .t {
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        line-height: 24px;
+        color: #fff;
+        font-size: 14px;
+        text-shadow: none;
+    }
+    .jssort11 .pav .t, .jssort11 .p:hover .t {
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+    }
+    .jssort11 .p:hover, .jssort11 .pav:hover {
+        background: #bf288e;
+    }
+
+    .jssort11 .pav, .jssort11 .p.pdn {
+        background: #bf288e;
+    }
