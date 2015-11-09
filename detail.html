@@ -6,6 +6,21 @@
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+        <script src="libs/superfish.min.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
     </head>
     <body>
         <div id="top-banner">
@@ -124,7 +139,7 @@
             <div class="wrapper">
                 <div id="main-text">
                     <!--文章开始-->
-                    <h1 style="padding: 10px 0 30px 0;text-shadow: 1px 1px 2px #000;color: #233192">General Infomation</h1>
+                    <h1>General Infomation</h1>
                     <div class="passage_info"><span id="writer">Written by: Lawrence</span><span id="editor">Edited by: Lawrence</span><span id="resource">Resource: Northeastern University</span><br />
                     <span id="update_time">Update:&nbsp&nbsp&nbsp&nbsp2015-10-22</span>
                     </div>
@@ -146,23 +161,10 @@
             <!--</div>-->
         </div>
         <div id="footer">
+        <div class="wrapper">
             <p>NO. 3-11, Wenhua Road, Heping District, Shenyang, P. R. China</p>
             <p>Copyright 2015 Northeastern University | 110819 | <a href="mailto:85590@mail.neu.edu.cn">85590@mail.neu.edu.cn</a></p>
         </div>
-        <script src="libs/superfish.min.js"></script>
-        <script>
-            (function($){
-
-			$(document).ready(function(){
-				var example = $('.navbar').superfish({
-					//配置
-                    hoverClass:    'sfHover',
-                    popUpSelector:  'ul,.subnav',
-                    pathLevels: 1,
-                    cssArrows:  false
-				});
-			});
-		})(jQuery);
-        </script>
+        </div>
     </body>
 </html>

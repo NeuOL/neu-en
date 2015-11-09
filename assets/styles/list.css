@@ -63,7 +63,44 @@ a:hover, a:active{
 #search-box{
     float: right;
 }
-
+#navbar{
+    width: 1000px;
+    margin: 4px auto;
+    text-align: center;
+}
+#navbar li{
+    display: inline-block;
+    *display: inline; zoom: 1;/*for ie6*/
+    padding: 0 0;
+    margin: 10px 0;
+}
+#navbar a{
+    color: #5d5d5d;
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: bold;
+    word-break: keep-all;
+    white-space: nowrap;
+    padding: 0 5px;/*
+    border-color: #FF0000;*/
+    border-right: 1px solid;
+    border-left:  1px solid;
+    border-bottom: 3px solid #FFF;
+}
+#navbar a:hover{
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid #d444b1;
+    text-decoration: none;
+}
+#navbar li:first-child a{
+    padding-left: 0;
+    border-left: 0;
+}
+#navbar li:last-child a{
+    padding-right: 0;
+    border-right: 0;
+}
 #banner-img{
     margin: 0 auto;
     padding: 0px 0px 10px 0px;
@@ -79,31 +116,7 @@ a:hover, a:active{
     /*float: left;*/
     width: 800px;
     margin-left: 300px;
-}
-#main-text{
-     color: #3e3e3e;
-     font-size: 16px;
-     line-height: 26px;
-     
-}
-#main-text h1 {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0 30px 0;
-    text-shadow: 1px 1px 2px #000;
-    color: #233192;
-}
-.passage_info {
-    margin: 0 auto 30px auto;
-    text-align: center;
-    line-height: 30px;
-}
-#writer, #editor, #resource, #update_time {
-    height: 20px;
-    line-height: 20px;
-    font-size: 14px;
-    margin: 0 10px;
-    color: #888;
+    height: 900px;
 }
 
 .sidebar{
@@ -115,7 +128,45 @@ a:hover, a:active{
     position: relative;
     /*margin-bottom: 360px;*/
 }
-
+#list {
+    width: 100%;
+    height: 800px;
+}
+#list h1 {
+    width: 100%;
+    /*text-align: center;*/
+    padding: 10px 0 10px 0;
+    text-shadow: 1px 1px 2px #000;
+    color: #233192;
+}
+#news_list .news_piece {
+    height: 24px;
+    list-style: none;
+}
+#news_list .news_piece a {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+}
+#news_list .news_piece a:hover {
+    color: #b82995
+}
+#news_list .news_piece .news_date {
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+}
+#page_controller {
+    width: 100%;
+    text-align: center;
+}
+#page_controller a {
+    height: 24px;
+    line-height: 24px;
+    color: #666;
+    margin: 10px 10px;
+}
 .bottom-gradient-1{
     height: 250px;
     width: 100%;
@@ -184,8 +235,6 @@ a:hover, a:active{
     background: #b82995;
 }
 #footer{
-    margin-top: 20px;
-    width: 100%;
     padding:30px 0;
     background-color: #99a3bc;
     text-align: center;
