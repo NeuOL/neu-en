@@ -6,6 +6,7 @@
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/index.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/slider.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
         <div id="header">
@@ -22,17 +23,87 @@
                     </div>
                 </div>
             </div>
-            <ul id="navbar">
-                 <li><a href="#">News & Event</a></li
-                ><li><a href="#">About NEU</a></li
-                ><li><a href="#">Schools & Departments</a></li
-                ><li><a href="#">Subjects & Researches</a></li
-                ><li><a href="#">International Cooperation</a></li
-                ><li><a href="#">Talents Recruitment</a></li
-                ><li><a href="#">Alumni & Foundation</a></li
-                ><li><a href="#">Library</a></li>
-            </ul>
-        </div>
+            <ul class="navbar clearfix">
+                 <li>
+                    <a href="#">News & Event</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                 </li
+                ><li>
+                    <a href="#">About NEU</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Schools & Departments</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Subjects & Researches</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">International Cooperation</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Talents Recruitment</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Alumni & Foundation</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Library</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li>
+            </ul>        </div>
         <div id="slider">
             <!-- Slides Container -->
             <div u="slides" id="slider-main">
@@ -267,6 +338,21 @@
                 $(window).bind("orientationchange", ScaleSlider);
                 //响应式布局结束d
             });
+        </script>
+        <script src="libs/superfish.min.js"></script>
+        <script>
+            (function($){
+
+			$(document).ready(function(){
+				var example = $('.navbar').superfish({
+					//配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+				});
+			});
+		})(jQuery);
         </script>
     </body>
 </html>

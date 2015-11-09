@@ -5,6 +5,7 @@
         <meta charset="utf-8"/>
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
         <div id="top-banner">
@@ -21,17 +22,87 @@
             </div>
         </div>
         <div id="header">
-            <ul id="navbar">
-                 <li><a href="#">News & Event</a></li
-                ><li><a href="#">About NEU</a></li
-                ><li><a href="#">Schools & Departments</a></li
-                ><li><a href="#">Subjects & Researches</a></li
-                ><li><a href="#">International Cooperation</a></li
-                ><li><a href="#">Talents Recruitment</a></li
-                ><li><a href="#">Alumni & Foundation</a></li
-                ><li><a href="#">Library</a></li>
-            </ul>
-            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        <ul class="navbar clearfix">
+                 <li>
+                    <a href="#">News & Event</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                 </li
+                ><li>
+                    <a href="#">About NEU</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Schools & Departments</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Subjects & Researches</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">International Cooperation</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Talents Recruitment</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Alumni & Foundation</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li
+                ><li>
+                    <a href="#">Library</a>
+                    <ul class="subnav">
+                        <li><a href="#">selection 1</a></li>
+                        <li><a href="#">selection 2</a></li>
+                        <li><a href="#">selection 3</a></li>
+                    </ul>
+                </li>
+            </ul>            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
         </div>
         <div class="clearfix" id="main-body">
            <div class="sidebar">
@@ -78,5 +149,20 @@
             <p>NO. 3-11, Wenhua Road, Heping District, Shenyang, P. R. China</p>
             <p>Copyright 2015 Northeastern University | 110819 | <a href="mailto:85590@mail.neu.edu.cn">85590@mail.neu.edu.cn</a></p>
         </div>
+        <script src="libs/superfish.min.js"></script>
+        <script>
+            (function($){
+
+			$(document).ready(function(){
+				var example = $('.navbar').superfish({
+					//配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+				});
+			});
+		})(jQuery);
+        </script>
     </body>
 </html>

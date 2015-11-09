@@ -1,0 +1,116 @@
+/*** ESSENTIAL STYLES ***/
+.navbar, .navbar * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.navbar li {
+	position: relative;
+}
+.navbar ul {
+	position: absolute;
+	display: none;
+	top: 100%;
+	left: 0;
+	z-index: 99;
+}
+/*
+.navbar > li {
+	float: left;
+}
+*/
+.navbar li:hover > ul,
+.navbar li.sfHover > ul {
+	display: block;
+}
+
+.navbar a {
+	display: block;
+	position: relative;
+}
+.navbar ul ul {
+	top: 0;
+	left: 100%;
+}
+
+
+/*** 皮肤设置 ***/
+
+.navbar li:hover,
+.navbar li.sfHover {
+	/*background: #FFF;*/
+	/* only transition out, not in */
+	-webkit-transition: none;
+	transition: none;
+}
+.navbar li:hover a,
+.navbar li.sfHover a {
+    border-bottom: 3px solid #d444b1;
+	color: #000;
+}
+
+.navbar{
+    margin: 4px auto;
+    text-align: center;
+}
+.navbar li{
+    display: inline-block;
+    *display: inline; zoom: 1;
+    padding: 0 0;
+    margin: 10px 0;
+	
+	-webkit-transition: background .2s;
+	transition: background .2s;
+}
+.navbar a{
+    color: #5d5d5d;
+    font-size: 13px;
+    font-weight: bold;
+    word-break: keep-all;
+    white-space: nowrap;
+    padding: 0 5px;
+    border-right: 1px solid;
+    border-left:  1px solid;
+    border-bottom: 3px solid #FFF;
+	zoom: 1;
+}
+.navbar li:hover a{
+    color: #000;
+    font-weight: bold;
+    border-bottom: 3px solid #d444b1;
+    text-decoration: none;
+}
+.navbar li:first-child a{
+    padding-left: 0;
+    border-left: 0;
+}
+.navbar li:last-child a{
+    padding-right: 0;
+    border-right: 0;
+}
+/*下拉菜单样式*/
+.navbar ul.subnav{
+	background: rgba(0,0,0,0.6);
+	border: none;
+	min-width: 100%;
+}
+.navbar ul.subnav li{
+	display: block;
+	float: none;
+	border: none;
+}
+.navbar ul.subnav a{
+	color: #FFF;
+	border:0 none;
+	padding: 0;
+	margin: 8px 10px;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+.navbar ul.subnav li:hover a{
+	color: #f27ef9;
+}
+.navbar ul.subnav li a{
+	border-bottom: 1px #888 solid;
+}

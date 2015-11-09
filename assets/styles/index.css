@@ -62,43 +62,7 @@ a:hover, a:active{
 #search-box{
     float: right;
 }
-#navbar{
-    margin: 4px auto;
-    text-align: center;
-}
-#navbar li{
-    display: inline-block;
-    *display: inline; zoom: 1;/*for ie6*/
-    padding: 0 0;
-    margin: 10px 0;
-}
-#navbar a{
-    color: #5d5d5d;
-    font-size: 13px;
-    line-height: 22px;
-    font-weight: bold;
-    word-break: keep-all;
-    white-space: nowrap;
-    padding: 0 5px;/*
-    border-color: #FF0000;*/
-    border-right: 1px solid;
-    border-left:  1px solid;
-    border-bottom: 3px solid #FFF;
-}
-#navbar a:hover{
-    color: #000;
-    font-weight: bold;
-    border-bottom: 3px solid #d444b1;
-    text-decoration: none;
-}
-#navbar li:first-child a{
-    padding-left: 0;
-    border-left: 0;
-}
-#navbar li:last-child a{
-    padding-right: 0;
-    border-right: 0;
-}
+
 #news-1{
     margin: 0 auto;
     /*width: 80%;*/
