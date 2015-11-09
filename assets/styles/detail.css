@@ -32,7 +32,8 @@ a:hover, a:active{
     font-style: normal;
 }
 #header{
-    width: 100%;
+    width: 1100px;
+    margin: 0 auto;
 }
 #top-banner{
     height: 66px;
@@ -40,11 +41,14 @@ a:hover, a:active{
     overflow: hidden;
     width: 100%;
 }
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
 #top-banner .wrapper{
     height:100%;
     margin:0 auto;
     /*width: 80%;*/
-    max-width:1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #logo-img{
@@ -63,6 +67,7 @@ a:hover, a:active{
     float: right;
 }
 #navbar{
+    width: 1000px;
     margin: 4px auto;
     text-align: center;
 }
@@ -102,36 +107,50 @@ a:hover, a:active{
 #banner-img{
     margin: 0 auto;
     padding: 0px 0px 10px 0px;
-    width: 80%;
-    max-width: 1024px;
-    width:expression(document.body.clientWidth>1023?"1024px":"auto");
+    width: 100%;
 }
 #main-body{
      margin: 0 auto;
-     width: 80%;
-     max-width: 1024px;
+     width: 1100px;
      /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
 }
 
 #main-body .wrapper{
-    float: left;
-    width: 100%;
+    /*float: left;*/
+    width: 800px;
+    margin-left: 300px;
 }
 #main-text{
-     margin-left: 250px;
      color: #3e3e3e;
      font-size: 16px;
      line-height: 26px;
      
 }
+#main-text h1 {
+    width: 100%;
+    text-align: center;
+}
+.passage_info {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    line-height: 30px;
+}
+#writer, #editor, #resource, #update_time {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 10px;
+    color: #888;
+}
+
 .sidebar{
     float: left;
     width: 220px;
-    margin-left: -100%;
+    /*margin-left: -100%;*/
     height: 450px;/*184+250!!!!*/
     background: #b82995;
     position: relative;
-    margin-bottom: 360px;
+    /*margin-bottom: 360px;*/
 }
 
 .bottom-gradient-1{
