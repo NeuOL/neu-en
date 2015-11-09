@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e808e3f3-9ee5-475f-a535-af33afebd8e8" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mods/main.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/detail.css" afterPath="$PROJECT_DIR$/assets/styles/detail.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/assets/styles/index.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/normalize.css" afterPath="$PROJECT_DIR$/assets/styles/normalize.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/css/slider.css" afterPath="$PROJECT_DIR$/assets/styles/slider.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/ela_sans_light_caps_pdf-webfont.eot" afterPath="$PROJECT_DIR$/assets/fonts/ela_sans_light_caps_pdf-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/ela_sans_light_caps_pdf-webfont.svg" afterPath="$PROJECT_DIR$/assets/fonts/ela_sans_light_caps_pdf-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/ela_sans_light_caps_pdf-webfont.ttf" afterPath="$PROJECT_DIR$/assets/fonts/ela_sans_light_caps_pdf-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/ela_sans_light_caps_pdf-webfont.woff" afterPath="$PROJECT_DIR$/assets/fonts/ela_sans_light_caps_pdf-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fonts/ela_sans_light_caps_pdf-webfont.woff2" afterPath="$PROJECT_DIR$/assets/fonts/ela_sans_light_caps_pdf-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/acadamic.png" afterPath="$PROJECT_DIR$/assets/img/acadamic.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/detail_banner.png" afterPath="$PROJECT_DIR$/assets/img/detail_banner.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/logo.png" afterPath="$PROJECT_DIR$/assets/img/logo.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/news/001.jpg" afterPath="$PROJECT_DIR$/assets/img/news/001.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/news/002.jpg" afterPath="$PROJECT_DIR$/assets/img/news/002.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/news/003.jpg" afterPath="$PROJECT_DIR$/assets/img/news/003.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/news/004.jpg" afterPath="$PROJECT_DIR$/assets/img/news/004.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/scholar.png" afterPath="$PROJECT_DIR$/assets/img/scholar.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/img/schools_and_departments.png" afterPath="$PROJECT_DIR$/assets/img/schools_and_departments.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jquery.min.js" afterPath="$PROJECT_DIR$/libs/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jssor.js" afterPath="$PROJECT_DIR$/libs/jssor.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/js/jssor.slider.js" afterPath="$PROJECT_DIR$/libs/jssor.slider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/detail.html" afterPath="$PROJECT_DIR$/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="neu-en.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,38 +22,7 @@
     <favorites_list name="neu-en" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.458334">
-              <caret line="200" column="42" selection-start-line="200" selection-start-column="42" selection-end-line="200" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mods/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -243,9 +189,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1436" height="877" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24946997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32909784" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -413,10 +359,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/mods/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.458334">
-          <caret line="200" column="42" selection-start-line="200" selection-start-column="42" selection-end-line="200" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -429,10 +375,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mods/main.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="1.0721089">
+          <caret line="200" column="42" selection-start-line="200" selection-start-column="42" selection-end-line="200" selection-end-column="42" />
           <folding />
         </state>
       </provider>
