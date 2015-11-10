@@ -1,4 +1,4 @@
-/*** ESSENTIAL STYLES ***/
+/*** 基础设置 ***/
 .navbar, .navbar * {
 	margin: 0;
 	padding: 0;
@@ -6,6 +6,7 @@
 }
 .navbar li {
 	position: relative;
+	z-index: 99;
 }
 .navbar ul {
 	position: absolute;
@@ -38,8 +39,6 @@
 
 .navbar li:hover,
 .navbar li.sfHover {
-	/*background: #FFF;*/
-	/* only transition out, not in */
 	-webkit-transition: none;
 	transition: none;
 }
@@ -52,13 +51,15 @@
 .navbar{
     margin: 4px auto;
     text-align: center;
+	zoom: 1;
 }
 .navbar li{
     display: inline-block;
-    *display: inline; zoom: 1;
+    *display: inline;
+	zoom: 1;
+	_width: 10px;
     padding: 0 0;
     margin: 10px 0;
-	
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
@@ -90,6 +91,7 @@
 }
 /*下拉菜单样式*/
 .navbar ul.subnav{
+	background: #000;
 	background: rgba(0,0,0,0.6);
 	border: none;
 	min-width: 100%;
