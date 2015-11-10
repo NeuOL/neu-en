@@ -194,21 +194,19 @@ a:hover, a:active{
     padding: 4px 10px;
 }
 .news-list table{
-    width:100%;
     table-layout: fixed;
     color: #2a4987;
 }
 .news-list .news-title{
-    width: 100%;
-    overflow: hidden;
-    word-break: keep-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     font-size: 14px;
     line-height: 28px;
 }
 .news-list .news-title a{
     color: #2a4987;
+    overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .news-list .news-title a:hover{
     color: #2a4987;
