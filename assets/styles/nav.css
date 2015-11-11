@@ -1,3 +1,52 @@
+.detail_sub {
+    height: auto;
+    color: #5D6A70;
+}
+.sub_links {
+    padding: 5px;
+    width: 800px;
+    margin: 0 auto;
+}
+.sub_links p {
+    width: 750px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.sub_links img {
+    width: 780px;
+    height: 156px;
+    padding: 0 10px;
+    margin: 10px auto;
+}
+.sub_links table {
+    border: hidden;
+    margin: 0 auto;
+}
+.sub_links td {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    background: url("../img/nav_link.png") no-repeat 100% 100%;
+}
+.sub_links td a {
+    padding-left: 10px;
+    color: #5D6A70;
+    font-size: small;
+}
+.sub_links .special_length {
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    background: url("../img/special_nav_link.png") no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -111,14 +160,6 @@ a:hover, a:active{
      width: 1100px;
      /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
 }
-
-#main-body .wrapper{
-    /*float: left;*/
-    width: 800px;
-    margin-left: 300px;
-    height: 900px;
-}
-
 .sidebar{
     float: left;
     width: 220px;
@@ -128,56 +169,9 @@ a:hover, a:active{
     position: relative;
     /*margin-bottom: 360px;*/
 }
-#list {
-    width: 100%;
-    height: 800px;
-}
-#list h1 {
-    width: 100%;
-    /*text-align: center;*/
-    padding: 10px 0 10px 0;
-    text-shadow: 1px 1px 2px #000;
-    color: #233192;
-}
-#news_list .news_piece {
-    height: 24px;
-    list-style: none;
-    width: 100%;
-    margin: 10px 0px;
-}
-#news_list .news_piece a {
-    height: 24px;
-    line-height: 24px;
-    color: #666;
-    
-    display: inline-block;
-    width: 700px;
-    overflow: hidden;
-    word-break: keep-all;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-#news_list .news_piece:hover a {
-    color: #b82995
-}
-#news_list .news_piece .news_date {
-    float: right;
-    height: 24px;
-    line-height: 24px;
-    color: #666;
-    
-    width: 90px;
-    text-align: center;
-}
-#page_controller {
-    width: 100%;
-    text-align: center;
-}
-#page_controller a {
-    height: 24px;
-    line-height: 24px;
-    color: #666;
-    margin: 10px 10px;
+.detail_sub {
+    width: 800px;
+    margin-left: 300px;
 }
 .bottom-gradient-1{
     height: 250px;
