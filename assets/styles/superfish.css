@@ -70,8 +70,8 @@
     word-break: keep-all;
     white-space: nowrap;
     padding: 0 5px;
+	margin-bottom: 1px;
     border-right: 1px solid;
-    border-left:  1px solid;
     border-bottom: 3px solid #FFF;
 	zoom: 1;
 }

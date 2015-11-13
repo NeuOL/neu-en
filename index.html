@@ -262,6 +262,7 @@
         <script src="libs/jquery.min.js" type="text/javascript"></script>
         <script type="text/javascript" src="libs/jssor.js"></script>
         <script type="text/javascript" src="libs/jssor.slider.js"></script>
+        <script src="libs/superfish.min.js"></script>
         <script>
             jQuery(document).ready(function ($) {
                 //ie6兼容，新闻列表宽度设置
@@ -276,7 +277,16 @@
                 $(window).bind("load", ResizeNewsList);
                 $(window).bind("resize", ResizeNewsList);
                 $(window).bind("orientationchange", ResizeNewsList);
-                //end
+                //新闻列表结束
+                //导航栏开始
+                var example = $('.navbar').superfish({
+					//配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+				});
+                //导航栏结束
                 var options = {
                     $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
                     $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
@@ -313,7 +323,6 @@
     
                 var slider = new $JssorSlider$("slider", options);
     
-    
                 //响应式布局开始
                 function ScaleSlider() {
                     var parentWidth = slider.$Elmt.parentNode.clientWidth;
@@ -334,21 +343,6 @@
                 $(window).bind("orientationchange", ScaleSlider);
                 //响应式布局结束d
             });
-        </script>
-        <script src="libs/superfish.min.js"></script>
-        <script>
-            (function($){
-
-			$(document).ready(function(){
-				var example = $('.navbar').superfish({
-					//配置
-                    hoverClass:    'sfHover',
-                    popUpSelector:  'ul,.subnav',
-                    pathLevels: 1,
-                    cssArrows:  false
-				});
-			});
-		})(jQuery);
         </script>
     </body>
 </html>

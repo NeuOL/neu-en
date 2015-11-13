@@ -6,29 +6,14 @@
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
-        <script type="text/javascript" src="libs/superfish.min.js"></script>
-        <script type="text/javascript">
-            (function($){
-
-            $(document).ready(function(){
-                var example = $('.navbar').superfish({
-                    //配置
-                    hoverClass:    'sfHover',
-                    popUpSelector:  'ul,.subnav',
-                    pathLevels: 1,
-                    cssArrows:  false
-                });
-            });
-        })(jQuery);
-        </script>
     </head>
     <body>
         <div id="top-banner">
             <div class="wrapper">
                 <div id="search-box" style="display: inline-block;">
-                    <form style="padding:20px 0">
+                    <!--<form style="padding:20px 0">
                         <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
-                    </form>
+                    </form>-->
                 </div>
                 <div>
                     <img src="assets/img/logo.png" id="logo-img"/>
@@ -162,5 +147,21 @@
             <p>Copyright 2015 Northeastern University | 110819 | <a href="mailto:85590@mail.neu.edu.cn">85590@mail.neu.edu.cn</a></p>
         </div>
         </div>
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
     </body>
 </html>
