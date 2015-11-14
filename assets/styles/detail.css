@@ -85,12 +85,14 @@ a:hover, a:active{
      font-size: 16px;
      line-height: 26px;
 }
-#main-text p {
-    text-align: justify;
+#main-text p span{
+    /*text-align: justify;*/
+    font-size: 16px;
 }
 #main-text h1 {
     width: 100%;
     text-align: center;
+    line-height: 1.2;
     padding: 10px 0 0px 0;
     text-shadow: 1px 1px 2px #000;
     color: #233192;

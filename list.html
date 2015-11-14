@@ -48,8 +48,8 @@
                     <div class="bottom-gradient-1"></div>
                     <div class="sidebar-content">
                         <ul>
-                            <li><a href="#">News & Event</a></li
-                            ><li><a class="active" href="#">About NEU</a></li
+                            <li><a class="active" href="#">News & Event</a></li
+                            ><li><a href="#">About NEU</a></li
                             ><li><a href="#">Schools & Departments</a></li
                             ><li><a href="#">Subjects & Researches</a></li
                             ><li><a href="#">International Cooperation</a></li
@@ -62,7 +62,7 @@
                 </div>
             <div class="wrapper">
                 <div id="list">
-                    <h1>General Information</h1>
+                    <h1>News & Event</h1>
                 </div>
                 <div id="page_controller">
                     <a href="#" onclick="firstPage()">First Page</a><a href="#" onclick="previousPage()">Previous Page</a><a href="#" onclick="nextPage()">Next Page</a>
@@ -107,7 +107,6 @@
                 $(link).text(data['title']);
                 $(link).appendTo(piece);
                 var time = new Date(data['pubtime'] * 1000);
-
                 $(date).addClass("news_date");
                 $(date).text('(' + time.getFullYear() + '/' + time.getMonth() + '/' + time.getDate() + ')');
                 $(date).appendTo(piece);
