@@ -41,9 +41,9 @@ function genDom() {
     var dom = "";
     for(var i = 0; i < curItem.length; i++) {
         if ( curIdx === i ) {
-            dom += '<li><a class="active" href="'+ curItem[i].href[0] +'">'+curItem[i].name+'</a></li>';
+            dom += '<li><a class="active" href="'+ curItem[i].href[0] +'" title="' + curItem[i].name + '">'+curItem[i].name+'</a></li>';
         } else {
-            dom += '<li><a href="'+ curItem[i].href[0] +'">'+curItem[i].name+'</a></li>';
+            dom += '<li><a href="'+ curItem[i].href[0] +'" title="' + curItem[i].name + '">'+curItem[i].name+'</a></li>';
         }
     }
     sideMenuList.html(dom);
