@@ -89,6 +89,9 @@ a:hover, a:active{
     /*text-align: justify;*/
     font-size: 16px;
 }
+#imgOfcollege {
+    text-align: center;
+}
 #main-text h1 {
     width: 100%;
     text-align: center;
