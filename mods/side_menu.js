@@ -53,8 +53,23 @@ var items = {
         {name: 'Master Degree Authorization Discipline', href:[host + "/subject_reseach/Master-Degree.html"]},
         {name: 'The Development of Scientific Research', href:[host + "/subject_reseach/scientific_research.html"]},
         {name: 'National Awards for Science and Technology', href:[host + "/subject_reseach/research_outcomes.html"]},
-        {name: 'Key Laboratory', href:[host + "/key_laboratory/KList.html"]},
-        {name: 'Research Center', href:[host + "/research_center/rList.html"]}
+        {name: 'Key Laboratory', href:[host + "/key_laboratory/KList.html",
+                                       host + "/key_laboratory/key1.html",
+                                       host + "/key_laboratory/key2.html",
+                                       host + "/key_laboratory/key3.html",
+                                       host + "/key_laboratory/key4.html",
+                                       host + "/key_laboratory/key5.html",
+                                       host + "/key_laboratory/key6.html"
+                                       ]
+        },
+        {name: 'Research Center', href:[host + "/research_center/rList.html",
+                                        host + "/research_center/center1.html",
+                                        host + "/research_center/center2.html",
+                                        host + "/research_center/center3.html",
+                                        host + "/research_center/center4.html",
+                                        host + "/research_center/center5.html",
+                                        host + "/research_center/center6.html"
+        ]}
     ]
 }
 
