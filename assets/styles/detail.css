@@ -85,6 +85,9 @@ a:hover, a:active{
      font-size: 16px;
      line-height: 26px;
 }
+#main-text #imgOfcollege {
+    text-align: center;
+}
 #main-text p {
     text-align: justify;
 }
@@ -149,6 +152,11 @@ ul li {
     height: 800px;
     width: 100%;
     background: #99a3bc;
+}
+
+.sidebar-content ul {
+    z-index: 100;
+    position: relative;
 }
 
 .bottom-gradient-2{
