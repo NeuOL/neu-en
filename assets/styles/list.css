@@ -157,7 +157,7 @@ a:hover, a:active{
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-#news_list .news_piece:hover a {
+#news_list .news_piece:hover a, #news_list .news_piece:hover span {
     color: #b82995
 }
 #news_list .news_piece .news_date {
