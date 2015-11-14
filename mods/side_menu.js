@@ -28,6 +28,33 @@ var items = {
         {name: 'The College of National Defense Education', href: [ host + "/college/NDE.html" ]},
         {name: 'The Physical Education Department', href: [ host + "/college/PED.html" ]},
         {name: 'School of International Exchange', href: [ host + "/college/IE.html" ]}
+    ],
+    alumni:[
+        {name: 'Northeastern University Alumni Association', href:[host + "/The_Alumni_Association/Alumni_Association.html"]},
+        {name: 'H. L. Chang Education Foundation', href:[host + "/The_Alumni_Association/Alumni_Association.html"]}
+    ],
+    talentsrecruitment:[
+        {name: '1000-Talents Plan', href:[host + "/talents_recruitment/1000_Talents_Plan.html"]},
+        {name: 'Overseas 100-Talents Plan', href:[host + "/talents_recruitment/100_Talents_Plan.html"]},
+        {name: 'Double-100 Plan', href:[host + "/talents_recruitment/Double-100_Plan.html"]},
+        {name: 'Other Talents', href:[host + "/talents_recruitment/OtherTalents.html"]}
+    ],
+    exchange:[
+        {name: 'Long-term Students Exchange Program', href:[host + "/exchange/Students-Exchange.html"]},
+        {name: 'Cooperation and exchanges', href:[host + "/exchange/Exchange-Cooperation.html"]},
+        {name: 'Study in NEU', href:["http://www.sie.neu.edu.cn/en/index.asp"]}
+    ],
+    subject_reseach:[
+        {name: 'Disciplinary Introduction', href:[host + "/subject_reseach/Disciplinary-introduction.html"]},
+        {name: 'Key Construction', href:[host + "/subject_reseach/key_construction.html"]},
+        {name: 'National Key Discipline', href:[host + "/subject_reseach/National-Key-Discipline.html"]},
+        {name: 'Provincial Key Discipline', href:[host + "/subject_reseach/Provincial-Key-Discipline.html"]},
+        {name: 'Doctoral Degree Authorization Discipline', href:[host + "/subject_reseach/Doctoral-Degree.html"]},
+        {name: 'Master Degree Authorization Discipline', href:[host + "/subject_reseach/Master-Degree.html"]},
+        {name: 'The Development of Scientific Research', href:[host + "/subject_reseach/scientific_research.html"]},
+        {name: 'National Awards for Science and Technology', href:[host + "/subject_reseach/research_outcomes.html"]},
+        {name: 'Key Laboratory', href:[host + "/key_laboratory/KList.html"]},
+        {name: 'Research Center', href:[host + "/research_center/rList.html"]}
     ]
 }
 
