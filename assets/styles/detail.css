@@ -32,8 +32,9 @@ a:hover, a:active{
     font-style: normal;
 }
 #header{
-    width: 1100px;
     margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #top-banner{
     height: 66px;
@@ -42,7 +43,6 @@ a:hover, a:active{
     width: 100%;
 }
 #top-banner .wrapper{
-    width: 1100px;
     height:100%;
     margin:0 auto;
     /*width: 80%;*/
@@ -70,14 +70,14 @@ a:hover, a:active{
     width: 100%;
 }
 #main-body{
-     margin: 0 auto;
-     width: 1100px;
-     /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
+    margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 
 #main-body .wrapper{
     /*float: left;*/
-    width: 790px;
+    max-width: 700px;
     margin-left: 300px;
 }
 #main-text{
@@ -194,8 +194,9 @@ a:hover, a:active{
     color:#FFF;
 }
 #footer .wrapper {
-    width: 1100px;
     margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #footer p, #footer a{
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;

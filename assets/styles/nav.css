@@ -3,18 +3,18 @@
 }
 .sub_links {
     padding: 5px;
-    width: 850px;
+    width: 780px;
     margin: 0 auto;
 }
 .sub_links p {
-    width: 850px;
+    width: 780px;
     height: 35px;
     line-height: 35px;
     padding-left: 10px;
     font-size: 18px;
 }
 .sub_links img {
-    width: 830px;
+    width: 760px;
     height: 160px;
     padding: 0 10px;
     margin: 10px auto;
@@ -80,8 +80,9 @@ a:hover, a:active{
     font-style: normal;
 }
 #header{
-    width: 1100px;
     margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #top-banner{
     height: 66px;
@@ -90,10 +91,9 @@ a:hover, a:active{
     width: 100%;
 }
 #top-banner .wrapper{
-    width: 1100px;
     height:100%;
     margin:0 auto;
-    /*width: 80%;*/
+    max-width:1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #logo-img{
@@ -156,8 +156,8 @@ a:hover, a:active{
 }
 #main-body{
      margin: 0 auto;
-     width: 1100px;
-     /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
+     max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 .sidebar{
     float: left;
@@ -169,7 +169,7 @@ a:hover, a:active{
     /*margin-bottom: 360px;*/
 }
 .detail_sub {
-    width: 850px;
+    width: 800px;
     margin-left: 250px;
 }
 .bottom-gradient-1{
@@ -249,8 +249,9 @@ a:hover, a:active{
     width: 100%;
 }
 #footer .wrapper {
-    width: 1100px;
     margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #footer p, #footer a{
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;

@@ -196,6 +196,7 @@ a:hover, a:active{
 .news-list table{
     table-layout: fixed;
     color: #2a4987;
+    width: 100%;
 }
 .news-list .news-title{
     font-size: 14px;
@@ -207,6 +208,8 @@ a:hover, a:active{
     word-break: keep-all;
     white-space: nowrap;
     text-overflow: ellipsis;
+    width: 100%;
+    display: block;
 }
 .news-list .news-title a:hover{
     color: #2a4987;

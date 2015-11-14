@@ -32,8 +32,9 @@ a:hover, a:active{
     font-style: normal;
 }
 #header{
-    width: 1100px;
     margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #top-banner{
     height: 66px;
@@ -42,10 +43,9 @@ a:hover, a:active{
     width: 100%;
 }
 #top-banner .wrapper{
-    width: 1100px;
     height:100%;
     margin:0 auto;
-    /*width: 80%;*/
+    max-width:1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #logo-img{
@@ -107,14 +107,14 @@ a:hover, a:active{
     width: 100%;
 }
 #main-body{
-     margin: 0 auto;
-     width: 1100px;
-     /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
+    margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 
 #main-body .wrapper{
     /*float: left;*/
-    width: 800px;
+    max-width: 720px;
     margin-left: 300px;
     height: 900px;
 }
@@ -151,7 +151,7 @@ a:hover, a:active{
     color: #666;
     
     display: inline-block;
-    width: 700px;
+    width: 80%;
     overflow: hidden;
     word-break: keep-all;
     white-space: nowrap;
@@ -165,9 +165,9 @@ a:hover, a:active{
     height: 24px;
     line-height: 24px;
     color: #666;
-    
-    width: 90px;
-    text-align: center;
+    margin-right: 3px;
+    width: 18%;
+    text-align: right;
 }
 #page_controller {
     width: 100%;
@@ -256,8 +256,9 @@ a:hover, a:active{
     width: 100%;
 }
 #footer .wrapper {
-    width: 1100px;
     margin: 0 auto;
+    max-width:1024px;
+    width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #footer p, #footer a{
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
