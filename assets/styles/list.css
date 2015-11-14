@@ -31,6 +31,9 @@ a:hover, a:active{
     font-weight: normal;
     font-style: normal;
 }
+#top-banner div {
+    cursor: pointer;
+}
 #header{
     margin: 0 auto;
     max-width:1024px;

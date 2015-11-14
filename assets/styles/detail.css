@@ -36,6 +36,9 @@ a:hover, a:active{
     max-width:1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
+#top-banner div {
+    cursor: pointer;
+}
 #top-banner{
     height: 66px;
     background-color: #0d285b;

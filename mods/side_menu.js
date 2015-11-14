@@ -3,6 +3,10 @@ var sideMenuList = $('.sidebar-content ul');
 // fix
 var host = 'http://localhost/neu-en';
 var items = {
+    news: [
+        {name: "News & Event", href: [ host + "/list.html", host + "/list.html#", host + "/detail.html" ]}
+
+    ],
     about: [
         {name: 'General Information', href: [host + "/aboutNEU/aboutNEU.html"]},
         {name: 'Academicians', href: [  host + "/aboutNEU/aList.html", host + "/aboutNEU/WenBangchun.html",
@@ -79,13 +83,12 @@ var curItem = null;
 var curIdx = -1;
 
 function findActive(cb) {
-    console.log(items)
     for (var item in items) {
         if (items.hasOwnProperty(item)) {
             for(var i = 0; i < items[item].length; i++) {
                 if (items[item][i]) {
                     for(var j = 0; j < items[item][i]['href'].length; j++) {
-                        if (items[item][i]['href'][j] === href) {
+                        if ( href.indexOf(items[item][i]['href'][j]) >= 0 ) {
                             curItem = items[item]
                             curIdx = i;
                         }
@@ -110,3 +113,7 @@ function genDom() {
 }
 
 findActive(genDom);
+
+$("#top-banner div").on('click', function() {
+    window.location.href = "/";
+});

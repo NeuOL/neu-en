@@ -33,14 +33,6 @@
                     <div class="bottom-gradient-1"></div>
                     <div class="sidebar-content">
                         <ul>
-                            <li><a href="#">News & Event</a></li
-                            ><li><a class="active" href="#">About NEU</a></li
-                            ><li><a href="#">Schools & Departments</a></li
-                            ><li><a href="#">Subjects & Researches</a></li
-                            ><li><a href="#">International Cooperation</a></li
-                            ><li><a href="#">Talents Recruitment</a></li
-                            ><li><a href="#">Alumni & Foundation</a></li
-                            ><li><a href="#">Library</a></li>
                         </ul>
                         <div class="bottom-gradient-2"></div>
                     </div>
@@ -61,6 +53,7 @@
         <!--#include virtual="include/footer.html" -->
         <script type="text/javascript" src="libs/jquery.min.js"></script>
         <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="./mods/side_menu.js"></script>
         <script type="text/javascript">
             (function($){
 
@@ -85,11 +78,10 @@
                 data: params.data || {},
                 type: 'GET',
                 success: function(ret) {
-                    console.log(ret);
                     generate(ret);
                 },
                 error: function(err) {
-                    console.log(err);
+                    // console.log(err);
                 }
             });
         }
