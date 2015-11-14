@@ -11,6 +11,23 @@ var items = {
                                         host + "/aboutNEU/School_Lesson_song.html"]},
         {name: 'Campus Pictures', href: [ "http://90.neu.edu.cn/plus/list.php?tid=33"]},
         {name: 'University Badge,Motto&Anthem', href: [host + "/aboutNEU/School_Lesson_song.html"]}
+    ],
+    college: [
+        {name: '(East campus) General School', href: [ host + "/college/GS.html" ]},
+        {name: 'School of Humanities and Law', href: [ host + "/college/HAL.html" ]},
+        {name: 'Foreign Studies College (FSC)', href: [ host + "/college/fsc.html" ]},
+        {name: 'SCollege of Arts', href: [ host + "/college/art.html" ]},
+        {name: 'School of Business Administration (SBA)', href: [ host + "/college/SBA.html" ]},
+        {name: 'The College of Sciences', href: [ host + "/college/S.html" ]},
+        {name: 'College of Resources and Civil Engineering', href: [ host + "/college/RCE.html" ]},
+        {name: 'School of Materials and Metallurgy', href: [ host + "/college/MM.html" ]},
+        {name: 'School of Mechanical Engineering and Automation', href: [ host + "/college/MEA.html" ]},
+        {name: 'College of Information Science and Engineering', href: [ host + "/college/ISE.html" ]},
+        {name: 'Software College', href: [ host + "/college/SC.html" ]},
+        {name: 'Sino-Dutch Biomedical and Information Engineering School', href: [ host + "/college/PSBAIES.html" ]},
+        {name: 'The College of National Defense Education', href: [ host + "/college/NDE.html" ]},
+        {name: 'The Physical Education Department', href: [ host + "/college/PED.html" ]},
+        {name: 'School of International Exchange', href: [ host + "/college/IE.html" ]}
     ]
 }
 
@@ -20,9 +37,10 @@ var curItem = null;
 var curIdx = -1;
 
 function findActive(cb) {
+    console.log(items)
     for (var item in items) {
         if (items.hasOwnProperty(item)) {
-            for(var i = 0; i < item.length; i++) {
+            for(var i = 0; i < items[item].length; i++) {
                 if (items[item][i]) {
                     for(var j = 0; j < items[item][i]['href'].length; j++) {
                         if (items[item][i]['href'][j] === href) {

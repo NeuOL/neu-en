@@ -153,6 +153,11 @@ ul li {
     background: #99a3bc;
 }
 
+.sidebar-content ul {
+    z-index: 100;
+    position: relative;
+}
+
 .bottom-gradient-2{
     height: 350px;
     width: 100%;
