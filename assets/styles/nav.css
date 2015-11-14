@@ -24,6 +24,7 @@
     margin: 0 auto;
 }
 .sub_links td {
+    padding: 0;
     width: 280px;
     height: 40px;
     line-height: 40px;
@@ -31,11 +32,21 @@
     background: url("../img/nav_link.png") no-repeat 100% 100%;
 }
 .sub_links td a {
-    padding-left: 10px;
+    padding: 0;
+    margin: 0;
+    /*height: 55px;*/
     color: #5D6A70;
     font-size: 12px;
+    width: 230px;
+    overflow: hidden;
+    display: inline-block;
+    word-break: keep-all;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
 }
 .sub_links .special_length {
+    padding: 0;
     width: 566px;
     height: 40px;
     line-height: 40px;

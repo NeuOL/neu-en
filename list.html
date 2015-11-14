@@ -8,8 +8,8 @@
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/list.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
-        <script type="text/javascript" src="libs/superfish.min.js"></script>
         <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
         <script type="text/javascript">
             (function($){
 
@@ -108,7 +108,7 @@
                 $(link).appendTo(piece);
                 var time = new Date(data['pubtime'] * 1000);
                 $(date).addClass("news_date");
-                $(date).text('(' + time.getFullYear() + '/' + time.getMonth() + '/' + time.getDate() + ')');
+                $(date).text(time.getFullYear() + '-' + (time.getMonth() < 10 ? ('0' + time.getMonth()) : time.getMonth()) + '-' + (time.getDate() < 10 ? ('0' + time.getDate()) : time.getDate()));
                 $(date).appendTo(piece);
                 $(piece).addClass("news_piece");
                 $(piece).appendTo(list);
