@@ -86,7 +86,6 @@ a:hover, a:active{
      line-height: 26px;
 }
 #main-text p span{
-    /*text-align: justify;*/
     font-size: 16px;
 }
 #imgOfcollege {
@@ -128,6 +127,7 @@ a:hover, a:active{
 
 ul li {
     list-style: none;
+    margin-bottom: 10px;
 }
 
 #main-text ul li a {
