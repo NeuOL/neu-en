@@ -45,7 +45,7 @@ a:hover, a:active{
 #top-banner .wrapper{
     height:100%;
     margin:0 auto;
-    /*width: 80%;*/
+    max-width: 1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #logo-img{
