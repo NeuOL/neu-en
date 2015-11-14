@@ -91,7 +91,7 @@
         function generate(data) {
             var detail = $("#main-text");
             var host = "http://neunews.neu.edu.cn";
-            content = data.content.replace(/<img src="/, "<img src=\""+host)
+            content = data.content.replace(/<img src="/g, "<img src=\""+host)
             $(content).appendTo(detail);
             $('#title').text(data['title']);
             $('#writer').text("Written By: " + data['author']);
