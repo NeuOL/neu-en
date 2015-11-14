@@ -76,7 +76,6 @@ a:hover, a:active{
 }
 
 #main-body .wrapper{
-    /*float: left;*/
     max-width: 700px;
     width:expression(document.body.clientWidth>699?"700px":"auto");
     margin-left: 300px;
