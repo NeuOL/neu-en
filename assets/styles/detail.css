@@ -115,7 +115,15 @@ a:hover, a:active{
     height: 450px;/*184+250!!!!*/
     background: #b82995;
     position: relative;
-    /*margin-bottom: 360px;*/
+    margin-bottom: 400px;
+}
+
+ul li {
+    list-style: none;
+}
+
+#main-text ul li a {
+    text-decoration: underline;
 }
 
 .bottom-gradient-1{

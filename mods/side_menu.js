@@ -5,8 +5,12 @@ var host = 'http://localhost/neu-en';
 var items = {
     about: [
         {name: 'General Information', href: [host + "/aboutNEU/aboutNEU.html"]},
-        {name: 'Academicians', href: [host + "/aboutNEU/aList.html", host + "/aboutNEU/WenBangchun.html",
-                                        host + "/aboutNEU/ZhangSiying.html"]},
+        {name: 'Academicians', href: [  host + "/aboutNEU/aList.html", host + "/aboutNEU/WenBangchun.html",
+                                        host + "/aboutNEU/ZhangSiying.html", host + "/aboutNEU/LuZhongwu.html",
+                                        host + "/aboutNEU/ChaiTianyou.html", host + "/aboutNEU/WangGuodong.html",
+                                        host + "/aboutNEU/School_Lesson_song.html"]},
+        {name: 'Campus Pictures', href: [ "http://90.neu.edu.cn/plus/list.php?tid=33"]},
+        {name: 'University Badge,Motto&Anthem', href: [host + "/aboutNEU/School_Lesson_song.html"]}
     ]
 }
 
