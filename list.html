@@ -9,6 +9,7 @@
         <link href="assets/styles/list.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
         <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
         <script type="text/javascript">
             (function($){
 
@@ -47,8 +48,8 @@
                     <div class="bottom-gradient-1"></div>
                     <div class="sidebar-content">
                         <ul>
-                            <li><a href="#">News & Event</a></li
-                            ><li><a class="active" href="#">About NEU</a></li
+                            <li><a class="active" href="#">News & Event</a></li
+                            ><li><a href="#">About NEU</a></li
                             ><li><a href="#">Schools & Departments</a></li
                             ><li><a href="#">Subjects & Researches</a></li
                             ><li><a href="#">International Cooperation</a></li
@@ -61,41 +62,86 @@
                 </div>
             <div class="wrapper">
                 <div id="list">
-                    <h1>General Information</h1>
-                <ul id="news_list">
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-11-06/39616.html" title="The innovation of production technique for aluminum oxide of NEU broke worldwide  problem" target="_blank">The innovation of production technique for aluminum oxide of NEU broke worldwide  problem</a><span class="news_date">(11/06)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-11-02/39375.html" title="Northeastern University Won Awards in NAO Future Home Service Robots National Competition" target="_blank">Northeastern University Won Awards in NAO Future Home Service Robots National Competition</a><span class="news_date">(11/02)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-10-26/39083.html" title="First International Conference on Operations Analytics and Optimization Held in Northeastern University" target="_blank">First International Conference on Operations Analytics and Optimization Held in Northeastern University</a><span class="news_date">(10/26)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-10-21/38815.html" title="Northeastern University Vice-President Wang Jianhua Visited Nagoya University, Japan" target="_blank">Northeastern University Vice-President Wang Jianhua Visited Nagoya University, Japan</a><span class="news_date">(10/21)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-10-16/38596.html" title="Northeastern University Expanded Library Scale " target="_blank">Northeastern University Expanded Library Scale </a><span class="news_date">(10/16)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-10-14/38479.html" title="Northeastern University Student Gave Speeches on Daejeon Global College Students Forum, South Korea, 1111111111111111" target="_blank">Northeastern University Student Gave Speeches on Daejeon Global College Students Forum, South Korea,1111111111</a><span class="news_date">(10/14)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-10-12/38393.html" title="Northeastern University Delegation Visit Clemson University, U.S. " target="_blank">Northeastern University Delegation Visit Clemson University, U.S. </a><span class="news_date">(10/12)</span>
-                    </li>
-                    <li class="news_piece">
-                        <a href="http://neunews.neu.edu.cn/campus/english/2015-10-10/38386.html" title="Northeastern University President Zhao Ji Headed a Delegation to Visit Dresden International University" target="_blank">Northeastern University President Zhao Ji Headed a Delegation to Visit Dresden International University</a><span class="news_date">(10/10)</span>
-                    </li>
-                </ul>
+                    <h1>News & Event</h1>
                 </div>
                 <div id="page_controller">
-                    <a href="#">First Page</a><a href="#">Previous</a><a href="#">Next</a><a href="#">Last Page</a>
+                    <a href="#" onclick="firstPage()">First Page</a><a href="#" onclick="previousPage()">Previous Page</a><a href="#" onclick="nextPage()">Next Page</a>
                 </div>
             </div>
             <!--<div style="height: 800px;margin-bottom: 20px;">-->
             <!--</div>-->
         </div>
         <!--#include virtual="include/footer.html" -->
+            <script type="text/javascript">
+        var currentPage = 1;
+        function fetch(params, generate) {
+            $.ajax({
+                url: params.url,
+                dataType: 'json',
+                async: true,
+                data: params.data || {},
+                type: 'GET',
+                success: function(ret) {
+                    generate(ret);
+                },
+                error: function(err) {
+                    console.log(err);
+                }
+            });
+        }
+        fetch({
+            url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+        }, generate);
+        
+        function generate(ret) {
+            var container = $('#list');
+            var list = document.createElement("ul");
+            $(list).attr("id", "news_list");
+            for(var i = 0; i < ret.length; i++) {
+                var data = ret[i];
+                var piece = document.createElement("li");
+                var date = document.createElement("span");
+                var link = document.createElement("a");
+                var url = "./detail.html#id=";
+                $(link).attr("href", url + data['id']);
+                $(link).text(data['title']);
+                $(link).appendTo(piece);
+                var time = new Date(data['pubtime'] * 1000);
+                $(date).addClass("news_date");
+                $(date).text('(' + time.getFullYear() + '/' + time.getMonth() + '/' + time.getDate() + ')');
+                $(date).appendTo(piece);
+                $(piece).addClass("news_piece");
+                $(piece).appendTo(list);
+            }
+            $(list).appendTo(container);
+        }
+        function addToList(data, list) {
+        }
+        function nextPage() {
+            currentPage++;
+            $("#news_list").remove();
+             fetch({
+                url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+             }, generate);
+        }
+        function previousPage() {
+            if (currentPage == 1) {
+                return;
+            } else {
+                currentPage--;
+                $("#news_list").remove();
+                fetch({
+                    url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+                }, generate);
+            }
+        }
+        function firstPage() {
+            currentPage = 1;
+            $('#news_list').remove();
+            fetch({
+                url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+            }, generate);
+        }
+    </script>
     </body>
 </html>

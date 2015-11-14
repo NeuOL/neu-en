@@ -8,6 +8,7 @@
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
     </head>
     <body>
         <div id="top-banner">
@@ -47,21 +48,10 @@
             <div class="wrapper">
                 <div id="main-text">
                     <!--文章开始-->
-                    <h1>General Infomation</h1>
-                    <div class="passage_info"><span id="writer">Written by: Lawrence</span><span id="editor">Edited by: Lawrence</span><span id="resource">Resource: Northeastern University</span><br />
-                    <span id="update_time">Update:&nbsp&nbsp&nbsp&nbsp2015-10-22</span>
+                    <h1 id="title"></h1>
+                    <div class="passage_info"><span id="writer"></span><span id="editor"></span><span id="resource"></span><br />
+                    <span id="update_time"></span>
                     </div>
-                    <p>Northeastern University (NEU; simplified Chinese: 东北大学; traditional Chinese: 東北大學; pinyin: Dōngběi Dàxué) is a public university in the city of Shenyang, Liaoning Province, China. With an annual enrollment of over 20,000 students, it is one of China's high level universities designated for the state key construction of the 211 Project and 985 Project.</p>
-                    <h2>History</h2>
-                    <p>The university was founded on April 26, 1923 in the capital city of Liaoning province, Shenyang (previously known as Mukden), which was also the historic political and economic center of Northeast China. Northeastern University attracted top scholars and teachers from throughout the region, and it quickly developed into a comprehensive university, with six schools in science, engineering, humanities, law, agriculture, and education. In July 1928, the university was taken over by Marshall Chang Hsüeh-liang (張學良, Zhang Xueliang), the military warlord who controlled all of Northeast China at the time. Marshall Chang assumed the title of president and became the university's most important financial and political patron in its early history.</p>
-                    <p>Less than a decade after it was founded, the university was forced to evacuate following the Mukden Incident on 18 September 1931. After the incident, the Japanese invaded and annexed all of Northeast China, including Shenyang, and reorganized the region into the puppet state of Manchukuo. Like many other national universities in China during the Second Sino-Japanese War, Northeastern University was repeatedly displaced and re-established in several cities. The university was relocated to Beijing, Xi'an, and the city of Santai in Sichuan Province, before the war ended in August 1945. The university returned to its original campus in Shenyang in February 1946.</p>
-                    <p>After the establishment of the People's Republic of China on 1 October 1949, Northeast China became the beneficiary of substantial Soviet investment. The region became heavily industrialized and one of the most prosperous regions in China. Northeast University was renamed Northeast University of Technology in August 1950, and it became primarily an engineering school.</p>
-                    <p>By the 1990s, economic reforms had caused most of the nation's economic investment to shift to the Pacific Coast cities. While most of China became increasingly prosperous, factories throughout Northeast China closed and the region fell into an extended economic recession. On 8 March 1993, Northeast University reverted to its original name.</p>
-                    <p>Today, Northeastern University is part of the 211 Project and Project 985, nationwide efforts to expand and modernize the nation's university system. The university is also part of the national government's initiative to replace the region's heavy manufacturing industry with a modern high-tech manufacturing economy.</p>
-                    <h2>Academics</h2>
-                    <p>Northeastern University consists of the School of Liberal Arts and Law, the School of Business Administration, the School of Sciences, the School of Resources and Civil Engineering, the School of Materials Science and Metallurgy, the School of Mechanical Engineering, the School of Information Science and Engineering, Sino-Dutch School of Biomedical and Information Engineering, and the Department of Foreign Languages. It has 46 undergraduate programs, 53 master's degree programs, and 23 doctoral degree programs, as well as an adult education program.</p>
-                    <h2>Campus</h2>
-                    <p>The campus has 1.98 million square meters and 730,000 square meters of floor space.</p>
                     <!--文章结束-->
                 </div>
             </div>
@@ -85,5 +75,39 @@
             });
         })(jQuery);
         </script>
+            <script type="text/javascript">
+        var id = window.location.hash.split("id=")[1];
+        function fetch(params, generate) {
+            $.ajax({
+                url: params.url,
+                dataType: 'json',
+                async: true,
+                data: params.data || {},
+                type: 'GET',
+                success: function(ret) {
+                    console.log(ret);
+                    generate(ret);
+                },
+                error: function(err) {
+                    console.log(err);
+                }
+            });
+        }
+        fetch({
+            url: 'http://neunews.neu.edu.cn/api.php?action=show&num=1&id=' + id
+        }, generate);
+        function generate(data) {
+            var detail = $("#main-text");
+            var host = "http://neunews.neu.edu.cn";
+            content = data.content.replace(/<img src="/, "<img src=\""+host)
+            $(content).appendTo(detail);
+            $('#title').text(data['title']);
+            $('#writer').text("Written By: " + data['author']);
+            $('#editor').text("Edited By: " + data['editor']);
+            $('#resource').text("Resource: " + data['comefrom']);
+            var time = new Date(data['pubtime'] * 1000);
+            $('#update_time').text('Update: ' + time.getFullYear() + '-' + time.getMonth() + '-' + time.getDate());
+        }
+    </script>
     </body>
 </html>
