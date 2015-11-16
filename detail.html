@@ -98,7 +98,7 @@
             $('#editor').text("Edited By: " + data['editor']);
             $('#resource').text("Resource: " + data['comefrom']);
             var time = new Date(data['pubtime'] * 1000);
-            $('#update_time').text('Update: ' + time.getFullYear() + '-' + time.getMonth() + '-' + time.getDate());
+            $('#update_time').text('Update: ' + time.getFullYear() + '-' + (time.getMonth()+1) + '-' + time.getDate());
         }
     </script>
     </body>

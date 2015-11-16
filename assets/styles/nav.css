@@ -3,23 +3,24 @@
 }
 .sub_links {
     padding: 5px;
-    width: 780px;
+    width: 770px;
     margin: 0 auto;
 }
 .sub_links p {
-    width: 780px;
+    width: 770px;
     height: 35px;
     line-height: 35px;
     padding-left: 10px;
     font-size: 18px;
 }
 .sub_links img {
-    width: 760px;
+    width: 770px;
     height: 160px;
-    padding: 0 10px;
+    padding: 0;
     margin: 10px auto;
 }
 .sub_links table {
+    width: 780px;
     border: hidden;
     margin: 0 auto;
 }
@@ -180,8 +181,8 @@ a:hover, a:active{
     /*margin-bottom: 360px;*/
 }
 .detail_sub {
-    width: 800px;
-    margin-left: 250px;
+    width: 780px;
+    margin-left: 244px;
 }
 .bottom-gradient-1{
     height: 250px;
