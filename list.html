@@ -97,6 +97,7 @@
                 var link = document.createElement("a");
                 var url = "./detail.html#id=";
                 $(link).attr("href", url + data['id']);
+                $(link).attr("title", data['title']);
                 $(link).text(data['title']);
                 $(link).appendTo(piece);
                 var time = new Date(data['pubtime'] * 1000);
