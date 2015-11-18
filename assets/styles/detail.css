@@ -229,7 +229,7 @@ ul li {
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #footer p, #footer a{
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    /*font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
 }
 #footer a{
     color: #FFF;

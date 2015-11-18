@@ -11,13 +11,16 @@ a:hover, a:active{
     text-decoration: none;
 }
 /*clearfix*/
-.clearfix:before,.clearfix:after{ 
-    content:""; 
-    display:table; 
-} 
-.clearfix:after{clear:both;} 
-.clearfix{ 
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
     *zoom:1;/*IE/7/6*/
+}
+#logo-text, #logo-img {
+    cursor: pointer;
 }
 /*标题字体*/
 @font-face {
@@ -246,7 +249,7 @@ a:hover, a:active{
     color:#FFF;
 }
 #footer p, #footer a{
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    /*font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
 }
 #footer a{
     color: #FFF;

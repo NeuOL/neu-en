@@ -4,8 +4,9 @@ var sideMenuList = $('.sidebar-content ul');
 var host = 'http://localhost/neu-en';
 var items = {
     news: [
-        {name: "News & Event", href: [ host + "/list.html", host + "/list.html#", host + "/detail.html" ]}
-
+        {name: "News & Events", href: [ host + "/news.html", host + "/news.html#", host + "/detail.html?news" ]},
+        {name: "Media", href: [ host + "/media.html", host + "/media.html#", host + "/detail.html?media" ]},
+        {name: "International Conferences", href: [ host + "/international.html", host + "/international.html#", host + "/detail.html?international" ]}
     ],
     about: [
         {name: 'General Information', href: [host + "/aboutNEU/aboutNEU.html"]},
@@ -14,7 +15,8 @@ var items = {
                                         host + "/aboutNEU/ChaiTianyou.html", host + "/aboutNEU/WangGuodong.html",
                                         host + "/aboutNEU/School_Lesson_song.html"]},
         {name: 'Campus Pictures', href: [ "http://90.neu.edu.cn/plus/list.php?tid=33"]},
-        {name: 'University Badge,Motto&Anthem', href: [host + "/aboutNEU/School_Lesson_song.html"]}
+        {name: 'University Badge,Motto&Anthem', href: [host + "/aboutNEU/School_Lesson_song.html"]},
+        {name: 'Campus Map', href: ["http://office.neu.edu.cn/wp-content/uploads/2012/03/%E4%B8%9C%E5%8C%97%E5%A4%A7%E5%AD%A6%E5%B9%B3%E9%9D%A2%E5%9B%BE0.jpg"]}
     ],
     college: [
         {name: '(East campus) General School', href: [ host + "/college/GS.html" ]},

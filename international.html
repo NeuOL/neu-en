@@ -83,9 +83,9 @@
             });
         }
         fetch({
-            url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+            url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
         }, generate);
-        
+
         function generate(ret) {
             var container = $('#list');
             var list = document.createElement("ul");
@@ -95,7 +95,7 @@
                 var piece = document.createElement("li");
                 var date = document.createElement("span");
                 var link = document.createElement("a");
-                var url = "./detail.html#id=";
+                var url = "./detail.html?news#id=";
                 $(link).attr("href", url + data['id']);
                 $(link).attr("title", data['title']);
                 $(link).text(data['title']);
@@ -115,7 +115,7 @@
             currentPage++;
             $("#news_list").remove();
              fetch({
-                url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+                url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
              }, generate);
         }
         function previousPage() {
@@ -125,7 +125,7 @@
                 currentPage--;
                 $("#news_list").remove();
                 fetch({
-                    url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+                    url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
                 }, generate);
             }
         }
@@ -133,7 +133,7 @@
             currentPage = 1;
             $('#news_list').remove();
             fetch({
-                url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+                url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
             }, generate);
         }
     </script>

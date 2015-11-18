@@ -11,12 +11,12 @@ a:hover, a:active{
     text-decoration: none;
 }
 /*clearfix*/
-.clearfix:before,.clearfix:after{ 
-    content:""; 
-    display:table; 
-} 
-.clearfix:after{clear:both;} 
-.clearfix{ 
+.clearfix:before,.clearfix:after{
+    content:"";
+    display:table;
+}
+.clearfix:after{clear:both;}
+.clearfix{
     *zoom:1;/*IE/7/6*/
 }
 /*标题字体*/
@@ -152,7 +152,7 @@ a:hover, a:active{
     height: 24px;
     line-height: 24px;
     color: #666;
-    
+
     display: inline-block;
     width: 80%;
     overflow: hidden;
@@ -228,7 +228,7 @@ a:hover, a:active{
 .sidebar-content ul{
     list-style: none;
     margin: 20px 0;
-    
+
 }
 .sidebar-content li{
     margin: 0 10px;
@@ -264,7 +264,7 @@ a:hover, a:active{
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
 }
 #footer p, #footer a{
-    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    /*font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;*/
 }
 #footer a{
     color: #FFF;
