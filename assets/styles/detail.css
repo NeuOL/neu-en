@@ -91,6 +91,9 @@ a:hover, a:active{
 #main-text p span{
     font-size: 16px;
 }
+#main-text p {
+    margin-bottom: 20px;
+}
 #imgOfcollege {
     text-align: center;
 }

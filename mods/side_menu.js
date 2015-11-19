@@ -22,7 +22,7 @@ var items = {
         {name: '(East campus) General School', href: [ host + "/college/GS.html" ]},
         {name: 'School of Humanities and Law', href: [ host + "/college/HAL.html" ]},
         {name: 'Foreign Studies College (FSC)', href: [ host + "/college/fsc.html" ]},
-        {name: 'SCollege of Arts', href: [ host + "/college/art.html" ]},
+        {name: 'College of Arts', href: [ host + "/college/art.html" ]},
         {name: 'School of Business Administration (SBA)', href: [ host + "/college/SBA.html" ]},
         {name: 'The College of Sciences', href: [ host + "/college/S.html" ]},
         {name: 'College of Resources and Civil Engineering', href: [ host + "/college/RCE.html" ]},
