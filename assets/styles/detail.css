@@ -163,7 +163,6 @@ ul li {
 }
 
 .sidebar-content ul {
-    z-index: 100;
     position: relative;
 }
 
