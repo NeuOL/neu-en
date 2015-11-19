@@ -106,6 +106,7 @@
         background: #bf288e;
     }
     .tp .t {
+        width: 250px;
         height: 45px;
         overflow: hidden;
         margin-left: 10px;
