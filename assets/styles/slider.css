@@ -1,3 +1,6 @@
+.sidebar-content li {
+    z-index: 0;
+}
 #slider{
     margin: 0 auto;
     position: relative;
@@ -102,7 +105,12 @@
     .jssort11 .p:hover, .jssort11 .pav:hover {
         background: #bf288e;
     }
-
+    .tp .t {
+        width: 250px;
+        height: 45px;
+        overflow: hidden;
+        margin-left: 10px;
+    }
     .jssort11 .pav, .jssort11 .p.pdn {
         background: #bf288e;
     }
