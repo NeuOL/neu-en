@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="renderer" content="webkit">
+        <title>Northeastern University</title>
+        <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="top-banner">
+            <div class="wrapper">
+                <div id="search-box" style="display: inline-block;">
+                    <!--<form style="padding:20px 0">
+                        <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+                    </form>-->
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" id="logo-img"/>
+                    <span id="logo-text">Northeastern University</span>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <!--#include virtual="include/header.html" -->
+            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        </div>
+        <div class="clearfix" id="main-body">
+           <div class="sidebar">
+                    <div class="bottom-gradient-1"></div>
+                    <div class="sidebar-content">
+                        <ul>
+                        </ul>
+                        <div class="bottom-gradient-2"></div>
+                    </div>
+                </div>
+            <div class="wrapper">
+                <div id="main-text">
+                    <!--文章开始-->
+                    <h1>Provincial Key Discipline</h1>
+					<table align="center" border="1" width="100%">
+						<tbody><tr>
+						  <td width="250" align="center">First-level Discipline</td>
+						  <td align="center">Mechanical Engineering<br>
+							Materials Science and Engineering<br>
+							Metallurgical Engineering<br>
+							Control Science and Engineering<br>
+							Computer Science and Technology<br>
+							Mineral Engineering<br>
+							 Biomedical Engineering<br>
+						  Management Science and Engineering</td>
+						</tr>
+						<tr>
+						  <td width="250" align="center">Second-level Discipline</td>
+						  <td align="center">Philosophy of Science and Technology<br>
+							Industrial Economics<br>
+							Basic Principle of Marxist<br>
+							 Applied mathematics<br>
+							  Condensed Matter Physics<br>
+							Analytical Chemistry<br>
+							 Physical Chemistry<br>
+							Engineering Mechanics<br>
+							  Thermal Power Engineering<br>
+							  Fluid Machinery and Engineering<br>
+							  Communication and Information Systems<br>
+							  Structural Engineering<br>
+							  Geodesy and Survey Engineering<br>
+							  Chemical Technology<br>
+							  Mineral Resource Prospecting and Exploration<br>
+							  Environmental Science<br>
+							  Corporate Management<br>
+						  Administration Management</td>
+						</tr>
+						<tr>
+						  <td width="250" align="center">Key Cultivating Discipline</td>
+						  <td align="center">Finance</td>
+						</tr>
+					  </tbody></table>
+                    <!--文章结束-->
+                </div>
+            </div>
+            <!--<div style="height: 800px;margin-bottom: 20px;">-->
+            <!--</div>-->
+        </div>
+        <!--#include virtual="include/footer.html" -->
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="mods/side_menu.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>

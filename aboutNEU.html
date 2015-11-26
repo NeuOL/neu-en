@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="renderer" content="webkit">
+        <title>Northeastern University</title>
+        <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="top-banner">
+            <div class="wrapper">
+                <div id="search-box" style="display: inline-block;">
+                    <!--<form style="padding:20px 0">
+                        <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+                    </form>-->
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" id="logo-img"/>
+                    <span id="logo-text">Northeastern University</span>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <!--#include virtual="include/header.html" -->
+            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        </div>
+        <div class="clearfix" id="main-body">
+           <div class="sidebar">
+                    <div class="bottom-gradient-1"></div>
+                    <div class="sidebar-content">
+                        <ul>
+                        </ul>
+                        <div class="bottom-gradient-2"></div>
+                    </div>
+                </div>
+            <div class="wrapper">
+                <div id="main-text">
+                    <!--文章开始-->
+                    <h1>General Infomation</h1>
+                    <div>
+                       <p><strong>Northeastern University</strong> is located in Shenyang, Liaoning Province, which occupied an area of 2030,000 square meters and an architectural area of 1000,000 square meters, is situated on the north bank of the Hun He River and close to the South Lake. The university is one of China"s high level universities designated for the state key construction of the "211 Project" and "985 Project".  </p>
+                       <p>Being a multi-discipline university focusing on engineering, while having kept the edge in traditional disciplines such as mining, material science, metallurgy and mechanical sciences, NEU has made headway in some of the newly rising and cross-disciplinary disciplines such as automation, computer science, and other high-tech disciplines. The discipline of Control Science and Engineering was ranked number one in this discipline in China in the first national first-level discipline assessment by National Academic Degree and Postgraduate Education Development Center. </p>
+                       <p>NEU consists of Qinghuangdao Branch, Graduate School, 19 schools and Department of Physical Education. There are 2463 teachers and researchers, 5 academicians of the Chinese Academy of Sciences and Chinese Academy of Engineering, 9 members of the Discipline Evaluation Board of the State Council, 353 tutors of ph. D student, 424 professors. There are 2925 ph. D students, 5928 graduate students, 25793 undergraduate students. NEU has 66 majors; it has the right to confer Master Degrees in 181 subjects, besides MBA, MPA and Engineering Master; to confer Doctor Degree in 100 subjects. There are 3 national key disciplines of First Class Discipline and 4 national key disciplines of Second Class Discipline, 15 Post-Doctor Stations, 4 National Engineering (Technology) Research Centers, 3 key State-level laboratory. There are 1 National base of College Student Quality-oriented Education and 1 national engineering and mechanical teaching base in engineering basic courses.    </p>
+                       <p>Since the 11th "five year plan", NEU has taken on 5600 research projects of national natural fund, national key fundamental research, develop and planning (973project), national high-tech research develop planning (863 project), national technology research, war industry and the cooperation research with enterprises. In 2006, the number of national awards of scientific and technical payoffs of NEU were ranked 6th among the universities in China. NEU has won 180 awards of the state, province and ministry, among which there is one first prize of the national technology progress award and two second prizes. NEU has published over 18424 papers on national and international academic journals and conferences. There are 10479 papers of NEU in the world top three search systems. </p>
+                       <p>NEU preserves in opening education facing the world. It has established academic exchange relationship with 170 universities and institutions in 32 countries and regions.</p>
+                       <p>Looking into the future, NEU will take the opportunity and keep its characteristic. It will strive to realize the goal that making NEU that is characteristic with " multi-discipline, research oriented, internationalization ", ranking among the top level nationwide and enjoying well recognition worldwide.</p>
+                   </div>
+                    </div>
+                    <!--文章结束-->
+                </div>
+            </div>
+            <!--<div style="height: 800px;margin-bottom: 20px;">-->
+            <!--</div>-->
+        </div>
+        <!--#include virtual="include/footer.html" -->
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="mods/side_menu.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>

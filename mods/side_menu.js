@@ -1,7 +1,7 @@
 var sideMenuList = $('.sidebar-content ul');
 
 // fix
-var host = 'http://localhost/neu-en';
+var host = 'http://202.118.1.138';
 var items = {
     news: [
         {name: "News & Events", href: [ host + "/news.html", host + "/news.html#", host + "/detail.html?news" ]},
@@ -9,72 +9,72 @@ var items = {
         {name: "International Conferences", href: [ host + "/international.html", host + "/international.html#", host + "/detail.html?international" ]}
     ],
     about: [
-        {name: 'General Information', href: [host + "/aboutNEU/aboutNEU.html"]},
-        {name: 'Academicians', href: [  host + "/aboutNEU/aList.html", host + "/aboutNEU/WenBangchun.html",
-                                        host + "/aboutNEU/ZhangSiying.html", host + "/aboutNEU/LuZhongwu.html",
-                                        host + "/aboutNEU/ChaiTianyou.html", host + "/aboutNEU/WangGuodong.html",
-                                        host + "/aboutNEU/School_Lesson_song.html"]},
+        {name: 'General Information', href: [host + "/aboutNEU.html"]},
+        {name: 'Academicians', href: [  host + "/aList.html", host + "/WenBangchun.html",
+                                        host + "/ZhangSiying.html", host + "/LuZhongwu.html",
+                                        host + "/ChaiTianyou.html", host + "/WangGuodong.html",
+                                        host + "/School_Lesson_song.html"]},
         {name: 'Campus Pictures', href: [ "http://90.neu.edu.cn/plus/list.php?tid=33"]},
-        {name: 'University Badge,Motto&Anthem', href: [host + "/aboutNEU/School_Lesson_song.html"]},
+        {name: 'University Badge,Motto&Anthem', href: [host + "/School_Lesson_song.html"]},
         {name: 'Campus Map', href: ["http://office.neu.edu.cn/wp-content/uploads/2012/03/%E4%B8%9C%E5%8C%97%E5%A4%A7%E5%AD%A6%E5%B9%B3%E9%9D%A2%E5%9B%BE0.jpg"]}
     ],
     college: [
-        {name: '(East campus) General School', href: [ host + "/college/GS.html" ]},
-        {name: 'School of Humanities and Law', href: [ host + "/college/HAL.html" ]},
-        {name: 'Foreign Studies College (FSC)', href: [ host + "/college/fsc.html" ]},
-        {name: 'College of Arts', href: [ host + "/college/art.html" ]},
-        {name: 'School of Business Administration (SBA)', href: [ host + "/college/SBA.html" ]},
-        {name: 'The College of Sciences', href: [ host + "/college/S.html" ]},
-        {name: 'College of Resources and Civil Engineering', href: [ host + "/college/RCE.html" ]},
-        {name: 'School of Materials and Metallurgy', href: [ host + "/college/MM.html" ]},
-        {name: 'School of Mechanical Engineering and Automation', href: [ host + "/college/MEA.html" ]},
-        {name: 'College of Information Science and Engineering', href: [ host + "/college/ISE.html" ]},
-        {name: 'Software College', href: [ host + "/college/SC.html" ]},
-        {name: 'Sino-Dutch Biomedical and Information Engineering School', href: [ host + "/college/PSBAIES.html" ]},
-        {name: 'The College of National Defense Education', href: [ host + "/college/NDE.html" ]},
-        {name: 'The Physical Education Department', href: [ host + "/college/PED.html" ]},
-        {name: 'School of International Exchange', href: [ host + "/college/IE.html" ]}
+        {name: '(East campus) General School', href: [ host + "/GS.html" ]},
+        {name: 'School of Humanities and Law', href: [ host + "/HAL.html" ]},
+        {name: 'Foreign Studies College (FSC)', href: [ host + "/fsc.html" ]},
+        {name: 'College of Arts', href: [ host + "/art.html" ]},
+        {name: 'School of Business Administration (SBA)', href: [ host + "/SBA.html" ]},
+        {name: 'The College of Sciences', href: [ host + "/S.html" ]},
+        {name: 'College of Resources and Civil Engineering', href: [ host + "/RCE.html" ]},
+        {name: 'School of Materials and Metallurgy', href: [ host + "/MM.html" ]},
+        {name: 'School of Mechanical Engineering and Automation', href: [ host + "/MEA.html" ]},
+        {name: 'College of Information Science and Engineering', href: [ host + "/ISE.html" ]},
+        {name: 'Software College', href: [ host + "/SC.html" ]},
+        {name: 'Sino-Dutch Biomedical and Information Engineering School', href: [ host + "/PSBAIES.html" ]},
+        {name: 'The College of National Defense Education', href: [ host + "/NDE.html" ]},
+        {name: 'The Physical Education Department', href: [ host + "/PED.html" ]},
+        {name: 'School of International Exchange', href: [ host + "/IE.html" ]}
     ],
     alumni:[
-        {name: 'Northeastern University Alumni Association', href:[host + "/The_Alumni_Association/Alumni_Association.html"]},
-        {name: 'H. L. Chang Education Foundation', href:[host + "/The_Alumni_Association/Alumni_Association.html"]}
+        {name: 'Northeastern University Alumni Association', href:[host + "/Alumni_Association.html"]},
+        {name: 'H. L. Chang Education Foundation', href:[host + "/foundation.html"]}
     ],
     talentsrecruitment:[
-        {name: '1000-Talents Plan', href:[host + "/talents_recruitment/1000_Talents_Plan.html"]},
-        {name: 'Overseas 100-Talents Plan', href:[host + "/talents_recruitment/100_Talents_Plan.html"]},
-        {name: 'Double-100 Plan', href:[host + "/talents_recruitment/Double-100_Plan.html"]},
-        {name: 'Other Talents', href:[host + "/talents_recruitment/OtherTalents.html"]}
+        {name: '1000-Talents Plan', href:[host + "/1000_Talents_Plan.html"]},
+        {name: 'Overseas 100-Talents Plan', href:[host + "/100_Talents_Plan.html"]},
+        {name: 'Double-100 Plan', href:[host + "/Double-100_Plan.html"]},
+        {name: 'Other Talents', href:[host + "/OtherTalents.html"]}
     ],
     exchange:[
-        {name: 'Long-term Students Exchange Program', href:[host + "/exchange/Students-Exchange.html"]},
-        {name: 'Cooperation and exchanges', href:[host + "/exchange/Exchange-Cooperation.html"]},
+        {name: 'Long-term Students Exchange Program', href:[host + "/Students-Exchange.html"]},
+        {name: 'Cooperation and exchanges', href:[host + "/Exchange-Cooperation.html"]},
         {name: 'Study in NEU', href:["http://www.sie.neu.edu.cn/en/index.asp"]}
     ],
     subject_reseach:[
-        {name: 'Disciplinary Introduction', href:[host + "/subject_reseach/Disciplinary-introduction.html"]},
-        {name: 'Key Construction', href:[host + "/subject_reseach/key_construction.html"]},
-        {name: 'National Key Discipline', href:[host + "/subject_reseach/National-Key-Discipline.html"]},
-        {name: 'Provincial Key Discipline', href:[host + "/subject_reseach/Provincial-Key-Discipline.html"]},
-        {name: 'Doctoral Degree Authorization Discipline', href:[host + "/subject_reseach/Doctoral-Degree.html"]},
-        {name: 'Master Degree Authorization Discipline', href:[host + "/subject_reseach/Master-Degree.html"]},
-        {name: 'The Development of Scientific Research', href:[host + "/subject_reseach/scientific_research.html"]},
-        {name: 'National Awards for Science and Technology', href:[host + "/subject_reseach/research_outcomes.html"]},
-        {name: 'Key Laboratory', href:[host + "/key_laboratory/KList.html",
-                                       host + "/key_laboratory/key1.html",
-                                       host + "/key_laboratory/key2.html",
-                                       host + "/key_laboratory/key3.html",
-                                       host + "/key_laboratory/key4.html",
-                                       host + "/key_laboratory/key5.html",
-                                       host + "/key_laboratory/key6.html"
+        {name: 'Disciplinary Introduction', href:[host + "/Disciplinary-introduction.html"]},
+        {name: 'Key Construction', href:[host + "/key_construction.html"]},
+        {name: 'National Key Discipline', href:[host + "/National-Key-Discipline.html"]},
+        {name: 'Provincial Key Discipline', href:[host + "/Provincial-Key-Discipline.html"]},
+        {name: 'Doctoral Degree Authorization Discipline', href:[host + "/Doctoral-Degree.html"]},
+        {name: 'Master Degree Authorization Discipline', href:[host + "/Master-Degree.html"]},
+        {name: 'The Development of Scientific Research', href:[host + "/scientific_research.html"]},
+        {name: 'National Awards for Science and Technology', href:[host + "/research_outcomes.html"]},
+        {name: 'Key Laboratory', href:[host + "/KList.html",
+                                       host + "/key1.html",
+                                       host + "/key2.html",
+                                       host + "/key3.html",
+                                       host + "/key4.html",
+                                       host + "/key5.html",
+                                       host + "/key6.html"
                                        ]
         },
-        {name: 'Research Center', href:[host + "/research_center/rList.html",
-                                        host + "/research_center/center1.html",
-                                        host + "/research_center/center2.html",
-                                        host + "/research_center/center3.html",
-                                        host + "/research_center/center4.html",
-                                        host + "/research_center/center5.html",
-                                        host + "/research_center/center6.html"
+        {name: 'Research Center', href:[host + "/rList.html",
+                                        host + "/center1.html",
+                                        host + "/center2.html",
+                                        host + "/center3.html",
+                                        host + "/center4.html",
+                                        host + "/center5.html",
+                                        host + "/center6.html"
         ]}
     ]
 }

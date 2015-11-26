@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="renderer" content="webkit">
+        <title>Northeastern University</title>
+        <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="top-banner">
+            <div class="wrapper">
+                <div id="search-box" style="display: inline-block;">
+                    <!--<form style="padding:20px 0">
+                        <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+                    </form>-->
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" id="logo-img"/>
+                    <span id="logo-text">Northeastern University</span>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <!--#include virtual="include/header.html" -->
+            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        </div>
+        <div class="clearfix" id="main-body">
+           <div class="sidebar">
+                    <div class="bottom-gradient-1"></div>
+                    <div class="sidebar-content">
+                        <ul>
+                        </ul>
+                        <div class="bottom-gradient-2"></div>
+                    </div>
+                </div>
+            <div class="wrapper">
+                <div id="main-text">
+                    <!--文章开始-->
+                    <h1>College of Resources and Civil Engineering</h1>
+                    <div id="collegeIntro">
+			 <div id="imgOfcollege"><img src="assets/img/RCE.jpg" width="570" height="320"></div>
+               <div id="detail">
+
+                   <div>
+                       <p>
+College of Resources and Civil Engineering was founded in September, 1995 consisting of Department of Mining Engineering and Department of Mineral Engineering at the time. The college has now 209 faculty members, of which, 3 are distinguished professors of the "ChangJiang Scholars Program", 2 in the "Discipline Evaluation Group of the Sate Council", 2 honored with the national "New Centaury Hundred, Thousand and Ten-thousand Talents", 10 members of "Education Ministry's New Century Excellent Talents". There are 27 doctoral supervisors, 47 professors, 50 associate professors and 2415 students in the college.                       </p>
+                       <p>
+College of Resources and Civil Engineering is among the first batch of units in the "211" and "985" Construction Projects. Doctoral degrees are offered in 4 grade-1 disciplines and 1 grade-2 discipline, and master's degrees in 6 grade-1 disciplines and 2 grade-2 disciplines. Engineering master's degrees are also offered in 6 subject fields. Bachelor degrees are offered in 9 subject majors in the undergraduate program. Mining Engineering is the national major discipline, Mineral Processing Engineering is the national major discipline (cultivation), and 7 grade-2 disciplines are the Liaoning provincial major disciplines. There are 4 postdoctor exchange stations and 4 majors are in the National Special Major Construction Program.                       </p>
+                       <p>
+Since the establishment of the college, 259 awards at various levels have been rewarded, including 4 National Science and Technology Progress Awards, 1 National Technological Invention Award, and 98 second-class and higher awards at the provincial and ministerial levels. More than 3600 research projects have been granted, including projects in the national "973 Program" and "863 Program", with a total research fund of 280 million RMB. 5200 technical papers and 180 books have been published. 120 national patents have been granted and 14 software packages with full intellectual property have been developed. There are 2 Liaoning provincial university innovation teams and 7 provincial and ministerial key laboratories. The college has established academic exchange and cooperation relationships with more than 30 universities and institutes around the world.                       </p>
+                       <p>
+We are focusing our full efforts on implementing the "Twelfth Five-Year Plan" and striving to make the college a distinctive and domestically top-ranking college with great merits.                       </p>
+
+                   </div>
+               </div>
+          </div>
+                    </div>
+                    <!--文章结束-->
+                </div>
+            </div>
+            <!--<div style="height: 800px;margin-bottom: 20px;">-->
+            <!--</div>-->
+        </div>
+        <!--#include virtual="include/footer.html" -->
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="mods/side_menu.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>

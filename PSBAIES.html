@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="renderer" content="webkit">
+        <title>Northeastern University</title>
+        <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="top-banner">
+            <div class="wrapper">
+                <div id="search-box" style="display: inline-block;">
+                    <!--<form style="padding:20px 0">
+                        <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+                    </form>-->
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" id="logo-img"/>
+                    <span id="logo-text">Northeastern University</span>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <!--#include virtual="include/header.html" -->
+            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        </div>
+        <div class="clearfix" id="main-body">
+           <div class="sidebar">
+                    <div class="bottom-gradient-1"></div>
+                    <div class="sidebar-content">
+                        <ul>
+                        </ul>
+                        <div class="bottom-gradient-2"></div>
+                    </div>
+                </div>
+            <div class="wrapper">
+                <div id="main-text">
+                    <!--文章开始-->
+                    <h1>Sino-Dutch Biomedical and Information Engineering School</h1>
+                    <div id="collegeIntro">
+			 <div id="imgOfcollege"><img src="assets/img/PSBIES.jpg" width="570" height="320"></div>
+               <div id="detail">
+
+                   <div>
+                       <p>
+Sino-Dutch Biomedical and Information Engineering School (BMIE) was founded based on the former disciplines of Biomedical Engineering and Electronic and Information Engineering of the Information Science and Engineering School of Northeastern University (NEU) with the approval of the PRC Ministry of Education (MOE) on August 26, 2005. BMIE was jointly established by NEU and the Eindhoven University of Technology (TU/e) in the Netherlands with the active support from Neusoft Medical, Philips Healthcare, and the clinical resources of Shengjing Hospital of China Medical University as well as Beijing Tiantan Hospital. The school features the program of biomedical engineering, and is qualified of Bachelor's, Master's and Doctoral degree granting. The school follows the Dean Responsibility System under the leadership of the Joint Management Committee. BMIE exercises the appointment system for faculty and staff. The school has 44 faculty and staff, and 532 current students including 411 undergraduate students, 97 graduate students and 24 PhD students.                       </p>
+                       <p>
+The program of Biomedical Engineering was launched at NEU in 1996, which has been developed by applying the information science and technology into the solution of practical medical issues. BMIE was authorized to confer Master degree in 1998 and first-level discipline of doctoral degree in 2006. The subject was approved as a provincial key discipline in 2008. The application for the MOE Key Laboratory of Medical Image Computing was successfully accepted in 2009. The program of Biomedical Engineering was approved as a featured specialty of MOE in the same year.                        </p>
+                       <p>
+BMIE has taken the advantages of owning a world-class platform for the healthcare industry, clinical medical resources as well as cross-disciplines, by following the application of basic research and high-tech development research, emphasizing the central role of medical imaging, to carry out research directions in medical imaging science and technology, medical image analysis and intelligent assistance, biomedical electronics, and biomedical informatics, etc. The school undertakes a number of large-scale software development and major scientific and technological projects, including the State 863 Project, the State Research Programs and the State Natural Science Foundation Project. The school has formed a high-level academic team with well-known professors as team leaders, young and middle-aged PhDs with  high academic levels as backbone, and returned overseas talents, who have developed a series of advanced digital medical products and technologies with own intellectual property rights.                         </p>
+                       <p>
+In terms of teaching, BMIE keeps in line with international standards by focusing on the practical aspects, extensively absorbing the new DCL teaching modes from partner institutions. Students are encouraged to actively participate in research and practice. An all-round and internationalized exchange platform has been set up to create opportunities for faculty and students to further their overseas study and exchanges.                       </p>
+
+                   </div>
+               </div>
+          </div>
+                    </div>
+                    <!--文章结束-->
+                </div>
+            </div>
+            <!--<div style="height: 800px;margin-bottom: 20px;">-->
+            <!--</div>-->
+        </div>
+        <!--#include virtual="include/footer.html" -->
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="mods/side_menu.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>
