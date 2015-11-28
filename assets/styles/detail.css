@@ -35,6 +35,8 @@ a:hover, a:active{
     margin: 0 auto;
     max-width:1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
+    position: relative;
+    z-index: 97;
 }
 #top-banner div {
     cursor: pointer;
@@ -87,6 +89,11 @@ a:hover, a:active{
      color: #3e3e3e;
      font-size: 16px;
      line-height: 26px;
+     
+     min-height:850px;
+     height:auto !important;
+     height:850px;
+}
 }
 #main-text p span{
     font-size: 16px;
@@ -198,6 +205,7 @@ ul li {
 .sidebar-content a, .sidebar-content a:visited{
     display: block;
     height: 40px;
+    width: 180px;
     line-height: 40px;
     font-size: 14px;
     font-weight: bold;

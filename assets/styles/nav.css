@@ -95,6 +95,8 @@ a:hover, a:active{
     margin: 0 auto;
     max-width:1024px;
     width:expression(document.body.clientWidth>1023?"1024px":"auto");
+    position: relative;
+    z-index: 97;
 }
 #top-banner{
     height: 66px;

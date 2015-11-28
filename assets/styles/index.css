@@ -36,6 +36,8 @@ a:hover, a:active{
 }
 #header{
     width: 100%;
+    position: relative;
+    z-index: 97;
 }
 #top-banner{
     height: 66px;

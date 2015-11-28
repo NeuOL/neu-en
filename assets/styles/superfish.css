@@ -1,4 +1,9 @@
 /*** 基础设置 ***/
+.navbar{
+	position: relative;
+	left: 50%;
+	float: left;
+}
 .navbar, .navbar * {
 	margin: 0;
 	padding: 0;
@@ -13,13 +18,23 @@
 	display: none;
 	top: 100%;
 	left: 0;
-	z-index: 99;
+	z-index: 98;
 }
-/*
+
 .navbar > li {
 	float: left;
 }
-*/
+.navbar li{
+	float: left;
+	right: 50%;
+	position: relative;
+}
+.navbar ul li{
+	float:none;
+	position: static;
+	display: block;
+}
+
 .navbar li:hover > ul,
 .navbar li.sfHover > ul {
 	display: block;
@@ -46,6 +61,10 @@
 .navbar li.sfHover a {
     border-bottom: 3px solid #d444b1;
 	color: #000;
+	font-weight: bold;
+    border-bottom: 3px solid #d444b1;
+	border-top: 3px solid #FFF;
+    text-decoration: none;
 }
 
 .navbar{
@@ -63,23 +82,18 @@
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
-.navbar a{
+.navbar li a{
     color: #5d5d5d;
     font-size: 13px;
     font-weight: bold;
     word-break: keep-all;
     white-space: nowrap;
     padding: 0 5px;
-	margin-bottom: 1px;
+	/*margin-bottom: 1px;*/
     border-right: 1px solid;
     border-bottom: 3px solid #FFF;
+	border-top: 3px solid #FFF;
 	zoom: 1;
-}
-.navbar li:hover a{
-    color: #000;
-    font-weight: bold;
-    border-bottom: 3px solid #d444b1;
-    text-decoration: none;
 }
 .navbar li:first-child a{
     padding-left: 0;
@@ -93,13 +107,19 @@
 .navbar ul.subnav{
 	background: #000;
 	background: rgba(0,0,0,0.6);
+	filter:alpha(opacity=60);
 	border: none;
+	padding-bottom: 15px;
 	min-width: 100%;
+	margin-top: 0;
 }
 .navbar ul.subnav li{
 	display: block;
+	*width: 222px;
 	float: none;
 	border: none;
+	height: 24px;
+	margin: 2px 0;
 }
 .navbar ul.subnav a{
 	color: #FFF;
@@ -108,6 +128,7 @@
 	margin: 8px 10px;
 	font-size: 12px;
 	line-height: 22px;
+	height:24px;
 }
 
 .navbar ul.subnav li:hover a{
