@@ -70,6 +70,8 @@
         </script>
             <script type="text/javascript">
         var id = window.location.hash.split("id=")[1];
+
+	$.support.cors = true;
         function fetch(params, generate) {
             $.ajax({
                 url: params.url,

@@ -67,6 +67,7 @@
         <script type="text/javascript" src="./mods/side_menu.js"></script>
         <script type="text/javascript">
         var currentPage = 1;
+	$.support.cors = true;
         function fetch(params, generate) {
             $.ajax({
                 url: params.url,

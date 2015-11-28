@@ -114,6 +114,7 @@ a:hover, a:active{
     padding: 10px 0 0px 0;
     text-shadow: 1px 1px 2px #000;
     color: #233192;
+    filter:DropShadow(Color=#AAAAAA, OffX=2, OffY=2);/*ie*/
 }
 .passage_info {
     margin: 0 auto 10px auto;
@@ -216,6 +217,8 @@ ul li {
     word-break: keep-all;
     white-space: nowrap;
     text-overflow: ellipsis;
+
+    filter:DropShadow(Color=#000000, OffX=1, OffY=1);/*ie*/
 }
 .sidebar-content a:hover{
     background: #b82995;

@@ -253,6 +253,8 @@ a:hover, a:active{
     word-break: keep-all;
     white-space: nowrap;
     text-overflow: ellipsis;
+
+    filter:DropShadow(Color=#000000, OffX=1, OffY=1);/*ie*/
 }
 .sidebar-content a:hover{
     background: #b82995;
