@@ -90,10 +90,11 @@ a:hover, a:active{
      color: #3e3e3e;
      font-size: 16px;
      line-height: 26px;
-     
+
      min-height:850px;
      height:auto !important;
      height:850px;
+     word-wrap: break-word;
 }
 }
 #main-text p span{
