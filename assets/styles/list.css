@@ -134,7 +134,7 @@ a:hover, a:active{
     /*margin-bottom: 360px;*/
 }
 #list {
-    width: 100%;
+    width: 95%;
     height: 800px;
 }
 #list h1 {
@@ -154,9 +154,11 @@ a:hover, a:active{
     height: 24px;
     line-height: 24px;
     color: #666;
-
+    float:left;
     display: inline-block;
     width: 80%;
+    /*width: expression(100% - 120px);*/
+    width:calc(95% - 120px);
     overflow: hidden;
     word-break: keep-all;
     white-space: nowrap;
@@ -171,7 +173,7 @@ a:hover, a:active{
     line-height: 24px;
     color: #666;
     margin-right: 3px;
-    width: 18%;
+    width: 100px;
     text-align: right;
 }
 #page_controller {

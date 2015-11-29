@@ -32,10 +32,12 @@
     text-shadow: 1px 1px 2px #000;
     color:#FFF;
     line-height: 40px;
-    padding: 0 10px;
+    padding: 0 0px;
     border-bottom: 4px solid #d444b1;
+    filter:alpha(opacity=80);
 }
 .caption-banner p{
+    padding: 0 10px;
     font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
     overflow: hidden;
     white-space: nowrap;

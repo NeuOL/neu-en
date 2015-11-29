@@ -13,7 +13,7 @@
 }
 .navbar li {
 	position: relative;
-	z-index: 99;
+	z-index: 97;
 }
 .navbar ul {
 	position: absolute;
@@ -34,6 +34,7 @@
 	float:none;
 	position: static;
 	display: block;
+	z-index: 99;
 }
 
 .navbar li:hover > ul,
@@ -64,7 +65,6 @@
 	color: #000;
 	font-weight: bold;
     border-bottom: 3px solid #d444b1;
-	border-top: 3px solid #FFF;
     text-decoration: none;
 }
 
@@ -93,7 +93,7 @@
 	/*margin-bottom: 1px;*/
     border-right: 1px solid;
     border-bottom: 3px solid #FFF;
-	border-top: 3px solid #FFF;
+	border-bottom: 3px solid rgba(0,0,0,0);
 	zoom: 1;
 }
 .navbar li:first-child a{

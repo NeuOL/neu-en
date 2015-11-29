@@ -82,8 +82,9 @@ a:hover, a:active{
 
 #main-body .wrapper{
     max-width: 700px;
-    width:expression(document.body.clientWidth>699?"700px":"auto");
     margin-left: 300px;
+    width: calc(95% - 300px);
+    width: expresion(95% - 300px);
 }
 #main-text{
      color: #3e3e3e;
