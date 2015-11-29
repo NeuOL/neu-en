@@ -67,7 +67,7 @@
         <script type="text/javascript" src="./mods/side_menu.js"></script>
         <script type="text/javascript">
         var currentPage = 1;
-	    $.support.cors = true;
+	      $.support.cors = true;
         function fetch(params, generate) {
             $.ajax({
                 url: params.url,
@@ -120,7 +120,7 @@
              }, generate);
         }
         function previousPage() {
-            if (currentPage == 1) {
+            if (currentPage == 0) {
                 return;
             } else {
                 currentPage--;
@@ -131,7 +131,7 @@
             }
         }
         function firstPage() {
-            currentPage = 1;
+            currentPage = 0;
             $('#news_list').remove();
             fetch({
                 url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage

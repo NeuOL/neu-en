@@ -178,6 +178,8 @@ a:hover, a:active{
     color: gray;
     font-size: 14px;
     text-decoration: none;
+    text-align: justify;
+    word-break: break-all;
 }
 .news-block .text a:hover h3{
     text-decoration: underline;
