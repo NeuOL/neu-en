@@ -1,8 +1,10 @@
 /*** 基础设置 ***/
+
 .navbar{
 	position: relative;
-	left: 50%;
-	float: left;
+	display: inline-block;
+    *display: inline;
+	zoom: 1;
 }
 .navbar, .navbar * {
 	margin: 0;
@@ -26,7 +28,6 @@
 }
 .navbar li{
 	float: left;
-	right: 50%;
 	position: relative;
 }
 .navbar ul li{
