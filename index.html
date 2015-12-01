@@ -99,32 +99,33 @@
 				});
                 //导航栏结束
                 var options = {
-                    $AutoPlay: true,                                   
-                    $AutoPlaySteps: 1,                                 
-                    $AutoPlayInterval: 3000,                           
-                    $PauseOnHover: 1,                               
-                    $Loop: 1,                                      
-                    $ArrowKeyNavigation: true,   			        
-                    $SlideDuration: 500,                           
+                    $FillMode: 2,
+                    $AutoPlay: true,
+                    $AutoPlaySteps: 1,
+                    $AutoPlayInterval: 3000,
+                    $PauseOnHover: 1,
+                    $Loop: 1,
+                    $ArrowKeyNavigation: true,
+                    $SlideDuration: 500,
                     $MinDragOffsetToSlide: 20,
-                    $SlideSpacing: 5, 					               
-                    $DisplayPieces: 1,                                
-                    $ParkingPosition: 0,                              
-                    $UISearchMode: 1,                                   
-                    $PlayOrientation: 1,                                
-                    $DragOrientation: 3,                                
+                    $SlideSpacing: 5,
+                    $DisplayPieces: 1,
+                    $ParkingPosition: 0,
+                    $UISearchMode: 1,
+                    $PlayOrientation: 1,
+                    $DragOrientation: 3,
 
                     $ThumbnailNavigatorOptions: {
-                        $Class: $JssorThumbnailNavigator$,             
-                        $ChanceToShow: 2,                               
-                        $Loop: 2,                                       
-                        $AutoCenter: 3,                                 
-                        $Lanes: 1,                                      
-                        $SpacingX: 4,                                   
-                        $SpacingY: 4,                                   
-                        $DisplayPieces: 5,                             
+                        $Class: $JssorThumbnailNavigator$,
+                        $ChanceToShow: 2,
+                        $Loop: 2,
+                        $AutoCenter: 3,
+                        $Lanes: 1,
+                        $SpacingX: 4,
+                        $SpacingY: 4,
+                        $DisplayPieces: 5,
                         $ParkingPosition: 0,
-                        $Orientation: 2,                               
+                        $Orientation: 2,
                         $DisableDrag: true
                     }
                 };
@@ -166,7 +167,7 @@
                     var str = Trancator({ str: target.text(), length: 15, omit: true}).Do();
                     target.text(str)
                 }
-                
+
             });
         </script>
     </body>
