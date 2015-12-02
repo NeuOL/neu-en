@@ -24,15 +24,11 @@ a:hover, a:active{
 }
 /*标题字体*/
 @font-face {
-    font-family: 'ela_sans_light_capsregular';
-    src: url('../fonts/ela_sans_light_caps_pdf-webfont.eot');
-    src: url('../fonts/ela_sans_light_caps_pdf-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/ela_sans_light_caps_pdf-webfont.woff2') format('woff2'),
-         url('../fonts/ela_sans_light_caps_pdf-webfont.woff') format('woff'),
-         url('../fonts/ela_sans_light_caps_pdf-webfont.ttf') format('truetype'),
-         url('../fonts/ela_sans_light_caps_pdf-webfont.svg#ela_sans_light_capsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'BerlinSmallCaps';
+	src: url('../fonts/BerlinSmallCaps.eot');
+	src: local('☺'), url('../fonts/BerlinSmallCaps.woff') format('woff'), url('../fonts/BerlinSmallCaps.ttf') format('truetype'), url('../fonts/BerlinSmallCaps.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 #header{
     width: 100%;
@@ -62,7 +58,7 @@ a:hover, a:active{
     color:#FFF;
     font-size: 40px;
     line-height: 66px;
-    font-family: 'ela_sans_light_capsregular';
+    font-family: 'BerlinSmallCaps';
 }
 #search-box{
     float: right;
