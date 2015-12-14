@@ -51,6 +51,10 @@
 	left: 100%;
 }
 
+.navbar .subnav a {
+	text-align: left;
+}
+
 
 /*** 皮肤设置 ***/
 
