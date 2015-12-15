@@ -57,6 +57,8 @@
             <div class="wrapper">
                 <div id="list">
                     <h1>News & Events</h1>
+                    <div id="loading"><img src="./assets/img/loading.gif" alt="loading" /></div>
+                    <div id="refresh"><img src="./assets/img/refresh.png" alt="refresh" /></div>
                 </div>
                 <div id="page_controller">
                     <a href="#" onclick="firstPage()"><i class="iconfont">&#xe60b;</i>&nbsp;First Page</a><a href="#" id="previous_page" onclick="previousPage()"><i class="iconfont">&#xe62a;</i>&nbsp;Previous Page</a><a href="#" id="next_page" onclick="nextPage()">Next Page&nbsp;<i class="iconfont">&#xe62b;</i></a>
@@ -70,7 +72,16 @@
         <script type="text/javascript">
         var currentPage = 0;
 	      $.support.cors = true;
+        var loading_icon = $('#loading');
+        var refresh_icon = $('#refresh');
+        $(refresh).click(function() {
+            $(refresh_icon).hide();
+            fetch({
+            url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
+        }, generate);
+        });
         function fetch(params, generate) {
+            $(loading_icon).show();
             $.ajax({
                 url: params.url,
                 dataType: 'json',
@@ -78,10 +89,12 @@
                 data: params.data || {},
                 type: 'GET',
                 success: function(ret) {
+                    $(loading_icon).hide();
                     generate(ret);
                 },
                 error: function(err) {
-                     //console.log(err);
+                    $(refresh_icon).show();
+                    console.log(err);
                 }
             });
         }
@@ -93,6 +106,7 @@
             var container = $('#list');
             var list = document.createElement("ul");
             $(list).attr("id", "news_list");
+            $("#news_list").remove();
             for(var i = 0; i < ret.length; i++) {
                 if(ret.length < 20) {
                     $('#next_page').hide();
@@ -121,11 +135,12 @@
         }
         function init() {
             $('#previous_page').hide();
+            $('#next_page').hide();
         }
         function nextPage() {
             currentPage++;
             $('#previous_page').show();
-            $("#news_list").remove();
+            // $("#news_list").remove();
              fetch({
                 url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
              }, generate);
@@ -140,7 +155,7 @@
                 } else {
                     $('#previous_page').show();
                 }
-                $("#news_list").remove();
+                // $("#news_list").remove();
                 fetch({
                     url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
                 }, generate);
@@ -149,7 +164,7 @@
         function firstPage() {
             currentPage = 0;
             $('#previous_page').hide();
-            $('#news_list').remove();
+            // $('#news_list').remove();
             fetch({
                 url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
             }, generate);

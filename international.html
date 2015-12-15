@@ -8,6 +8,7 @@
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/list.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/iconfont.css" type="text/css" rel="stylesheet" />
         <script type="text/javascript" src="libs/jquery.min.js"></script>
         <script type="text/javascript" src="libs/superfish.min.js"></script>
         <script type="text/javascript" src="libs/jquery.xdomainrequest.min.js"></script>
@@ -26,7 +27,7 @@
         })(jQuery);
         </script>
     </head>
-    <body>
+    <body onload="init()">
         <div id="top-banner">
             <div class="wrapper">
                 <div id="search-box" style="display: inline-block;">
@@ -55,10 +56,12 @@
                 </div>
             <div class="wrapper">
                 <div id="list">
-                    <h1>News & Events</h1>
+                    <h1>International Conferences</h1>
+                    <div id="loading"><img src="./assets/img/loading.gif" alt="loading" /></div>
+                    <div id="refresh"><img src="./assets/img/refresh.png" alt="refresh" /></div>
                 </div>
                 <div id="page_controller">
-                    <a href="#" onclick="firstPage()">First Page</a><a href="#" onclick="previousPage()">Previous Page</a><a href="#" onclick="nextPage()">Next Page</a>
+                    <a href="#" onclick="firstPage()"><i class="iconfont">&#xe60b;</i>&nbsp;First Page</a><a href="#" id="previous_page" onclick="previousPage()"><i class="iconfont">&#xe62a;</i>&nbsp;Previous Page</a><a href="#" id="next_page" onclick="nextPage()">Next Page&nbsp;<i class="iconfont">&#xe62b;</i></a>
                 </div>
             </div>
             <!--<div style="height: 800px;margin-bottom: 20px;">-->
@@ -68,8 +71,17 @@
         <script type="text/javascript" src="./mods/side_menu.js"></script>
         <script type="text/javascript">
         var currentPage = 0;
-		    $.support.cors = true;
+          $.support.cors = true;
+        var loading_icon = $('#loading');
+        var refresh_icon = $('#refresh');
+        $(refresh).click(function() {
+            $(refresh_icon).hide();
+            fetch({
+            url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
+        }, generate);
+        });
         function fetch(params, generate) {
+            $(loading_icon).show();
             $.ajax({
                 url: params.url,
                 dataType: 'json',
@@ -77,10 +89,12 @@
                 data: params.data || {},
                 type: 'GET',
                 success: function(ret) {
+                    $(loading_icon).hide();
                     generate(ret);
                 },
                 error: function(err) {
-                    // console.log(err);
+                    $(refresh_icon).show();
+                    console.log(err);
                 }
             });
         }
@@ -92,12 +106,18 @@
             var container = $('#list');
             var list = document.createElement("ul");
             $(list).attr("id", "news_list");
+            $("#news_list").remove();
             for(var i = 0; i < ret.length; i++) {
+                if(ret.length < 20) {
+                    $('#next_page').hide();
+                } else {
+                    $('#next_page').show();
+                }
                 var data = ret[i];
                 var piece = document.createElement("li");
                 var date = document.createElement("span");
                 var link = document.createElement("a");
-                var url = "./detail.html?international#id=";
+                var url = "./detail.html?news#id=";
                 $(link).attr("href", url + data['id']);
                 $(link).attr("title", data['title']);
                 $(link).text(data['title']);
@@ -113,9 +133,14 @@
         }
         function addToList(data, list) {
         }
+        function init() {
+            $('#previous_page').hide();
+            $('#next_page').hide();
+        }
         function nextPage() {
             currentPage++;
-            $("#news_list").remove();
+            $('#previous_page').show();
+            // $("#news_list").remove();
              fetch({
                 url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
              }, generate);
@@ -125,7 +150,12 @@
                 return;
             } else {
                 currentPage--;
-                $("#news_list").remove();
+                if (currentPage == 0) {
+                    $('#previous_page').hide();
+                } else {
+                    $('#previous_page').show();
+                }
+                // $("#news_list").remove();
                 fetch({
                     url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
                 }, generate);
@@ -133,7 +163,8 @@
         }
         function firstPage() {
             currentPage = 0;
-            $('#news_list').remove();
+            $('#previous_page').hide();
+            // $('#news_list').remove();
             fetch({
                 url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=41&page=' + currentPage
             }, generate);
