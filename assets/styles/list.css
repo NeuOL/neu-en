@@ -182,6 +182,9 @@ a:hover, a:active{
     color: #666;
     margin: 10px 10px;
 }
+#page_controller a:hover, #page_controller a:hover i {
+    color: #b82995;
+}
 .bottom-gradient-1{
     height: 250px;
     width: 100%;
