@@ -22,6 +22,10 @@ a:hover, a:active{
 #logo-text, #logo-img {
     cursor: pointer;
 }
+#uname-img{
+   height:66px;
+   cursor:pointer;
+}
 /*标题字体*/
 @font-face {
 	font-family: 'BerlinSmallCaps';

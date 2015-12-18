@@ -37,7 +37,7 @@
                 </div>
                 <div>
                     <img src="assets/img/logo.png" id="logo-img"/>
-                    <span id="logo-text">Northeastern University</span>
+                    <img src="assets/img/uname.png" id="uname-img"/>
                 </div>
             </div>
         </div>
@@ -81,6 +81,7 @@
         }, generate);
         });
         function fetch(params, generate) {
+            $("#news_list").remove();//防止内容溢出
             $(loading_icon).show();
             $.ajax({
                 url: params.url,
@@ -106,7 +107,7 @@
             var container = $('#list');
             var list = document.createElement("ul");
             $(list).attr("id", "news_list");
-            $("#news_list").remove();
+            //$("#news_list").remove();
             for(var i = 0; i < ret.length; i++) {
                 if(ret.length < 20) {
                     $('#next_page').hide();

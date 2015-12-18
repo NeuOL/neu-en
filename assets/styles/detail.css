@@ -61,6 +61,10 @@ a:hover, a:active{
     line-height: 66px;
     font-family: 'BerlinSmallCaps';
 }
+#uname-img{
+   height:66px;
+   cursor:pointer;
+}
 #search-box{
     float: right;
 }

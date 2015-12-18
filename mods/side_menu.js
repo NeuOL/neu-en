@@ -1,8 +1,8 @@
 var sideMenuList = $('.sidebar-content ul');
 
 // fix
-var host = 'http://202.118.1.138';
-// var host = 'http://localhost/neu-en';
+//var host = 'http://202.118.1.138';
+ var host = 'http://localhost/neu-en';
 var items = {
     news: [
         {name: "News & Events", href: [ host + "/news.html", host + "/news.html#", host + "/detail.html?news" ]},
@@ -117,6 +117,6 @@ function genDom() {
 
 findActive(genDom);
 
-$("#top-banner div").on('click', function() {
+$("#top-banner img").on('click', function() {
     window.location.href = host;
 });

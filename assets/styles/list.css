@@ -19,6 +19,10 @@ a:hover, a:active{
 .clearfix{
     *zoom:1;/*IE/7/6*/
 }
+#uname-img{
+   height:66px;
+   cursor:pointer;
+}
 /*标题字体*/
 @font-face {
 	font-family: 'BerlinSmallCaps';
