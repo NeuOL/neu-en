@@ -94,6 +94,7 @@
                     generate(ret);
                 },
                 error: function(err) {
+                    $(loading_icon).hide();
                     $(refresh_icon).show();
                     console.log(err);
                 }
