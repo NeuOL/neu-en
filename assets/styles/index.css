@@ -173,10 +173,14 @@ a:hover, a:active{
     color: #294986;
     font-weight: bold;
     font-size: 14px;
+    height: 60px;
+    overflow: hidden;
 }
 .news-block .text p{
     color: gray;
     font-size: 14px;
+    height: 80px;
+    overflow: hidden;
     text-decoration: none;
     text-align: justify;
     word-break: break-all;
