@@ -137,39 +137,66 @@
                 /* Trancate English words */
                 /* @params _opt {Object} */
                 /* _opt{ str(String), length(Integer),omit(Boolean) } */
-                function Trancator( _opt ) {
-                    return {
-                        Do: function() {
-                            _opt.str = _opt.str || '';
-                            _opt.lenth = isNaN(_opt.lenth)
-                                            ? _opt.str.length
-                                            : _opt.lenth;
+                // function Trancator( _opt ) {
+                //     return {
+                //         Do: function() {
+                //             _opt.str = _opt.str || '';
+                //             _opt.lenth = isNaN(_opt.lenth)
+                //                             ? _opt.str.length
+                //                             : _opt.lenth;
 
-                            _opt.omit = _opt.omit || true;
+                //             _opt.omit = _opt.omit || true;
 
-                            var strs = _opt.str;
-                            try {
-                                strs = strs.trim()
-                                            .split(' ')
-                                            .slice(0, _opt.length)
-                                            .join(' ')
-                            } catch(e) {}
+                //             var strs = _opt.str;
+                //             try {
+                //                 strs = strs.trim()
+                //                             .split(' ')
+                //                             .slice(0, _opt.length)
+                //                             .join(' ')
+                //             } catch(e) {}
 
-                            if ( _opt.omit ) {
-                                strs += '...'
-                            }
+                //             if ( _opt.omit ) {
+                //                 strs += '...'
+                //             }
 
-                            return strs;
-                        }
-                    }
+                //             return strs;
+                //         }
+                //     }
+                // }
+
+                // for(var i = 1; i <= 3; i++ ) {
+                //     var target = $(".tsh-inner-"+i+" p");
+                //     var str = Trancator({ str: target.text(), length: 15, omit: true}).Do();
+                //     target.text(str)
+                // }
+                var titleMaxLength = 95;
+                var previewMaxLength = 135;
+                var dots = '...';
+                for(var i = 1; i <= 3; i++ ) {
+                    var link = $(".tsh-inner-"+i+" a");
+                    var title = $(".tsh-inner-"+i+" h3");
+                    link.attr('title', title.text());
                 }
-
                 for(var i = 1; i <= 3; i++ ) {
                     var target = $(".tsh-inner-"+i+" p");
-                    var str = Trancator({ str: target.text(), length: 15, omit: true}).Do();
-                    target.text(str)
+                    var str = target.text();
+                    if(str.length > previewMaxLength) {
+                        str = str.substr(0, 132);
+                        str += dots;
+                        console.log(str);
+                        target.text(str);
+                    }
                 }
-
+                for(var i = 1; i <= 3; i++) {
+                    var target = $(".tsh-inner-"+i+" h3");
+                    var str = target.text();
+                    if(str.length > titleMaxLength) {
+                        str = str.substr(0, 92);
+                        str += dots;
+                        console.log(str);
+                        target.text(str);
+                    }
+                }
             });
         </script>
     </body>
