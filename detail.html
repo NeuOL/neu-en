@@ -7,6 +7,8 @@
         <title>Northeastern University</title>
         <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/ajax_control.css" type="text/css" rel="stylesheet" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
         <script type="text/javascript" src="libs/jquery.min.js"></script>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
         <script type="text/javascript" src="libs/jquery.xdomainrequest.min.js"></script>
@@ -41,6 +43,8 @@
             <div class="wrapper">
                 <div id="main-text">
                     <!--文章开始-->
+                    <div id="loading"><img src="./assets/img/loading.gif" alt="loading" /></div>
+                    <div id="refresh"><img src="./assets/img/refresh.png" alt="refresh" /></div>
                     <h1 id="title"></h1>
                     <div class="passage_info"><span id="writer"></span><span id="editor"></span><span id="resource"></span><br />
                     <span id="update_time"></span>
@@ -69,11 +73,19 @@
             });
         })(jQuery);
         </script>
-            <script type="text/javascript">
+        <script type="text/javascript">
         var id = window.location.hash.split("id=")[1];
-
-	$.support.cors = true;
+        var loading_icon = $('#loading');
+        var refresh_icon = $('#refresh');
+        $(refresh).click(function() {
+            $(refresh_icon).hide();
+            fetch({
+            url: 'http://neunews.neu.edu.cn/api.php?action=show&num=1&id=' + id
+        }, generate);
+        });
+	   $.support.cors = true;
         function fetch(params, generate) {
+            $(loading_icon).show();
             $.ajax({
                 url: params.url,
                 dataType: 'json',
@@ -81,10 +93,13 @@
                 data: params.data || {},
                 type: 'GET',
                 success: function(ret) {
+                    $(loading_icon).hide();
                     generate(ret);
                 },
                 error: function(err) {
-                    // console.log(err);
+                    $(loading_icon).hide();
+                    $(refresh_icon).show();
+                    console.log(err);
                 }
             });
         }
@@ -94,7 +109,7 @@
         function generate(data) {
             var detail = $("#main-text");
             var host = "http://neunews.neu.edu.cn";
-            content = data.content.replace(/<img src="/g, "<img src=\""+host)
+            var content = data.content.replace(/<img src="/g, "<img src=\""+host);
             $(content).appendTo(detail);
             $('#title').text(data['title']);
             $('#writer').text("Written By: " + data['author']);

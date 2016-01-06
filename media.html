@@ -9,9 +9,11 @@
         <link href="assets/styles/list.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
         <link href="assets/styles/iconfont.css" type="text/css" rel="stylesheet" />
+        <link href="assets/styles/ajax_control.css" type="text/css" rel="stylesheet" />
         <script type="text/javascript" src="libs/jquery.min.js"></script>
         <script type="text/javascript" src="libs/superfish.min.js"></script>
         <script type="text/javascript" src="libs/jquery.xdomainrequest.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
         <script type="text/javascript">
             (function($){
 
@@ -119,7 +121,7 @@
                 var piece = document.createElement("li");
                 var date = document.createElement("span");
                 var link = document.createElement("a");
-                var url = "./detail.html?news#id=";
+                var url = "./detail.html?media#id=";
                 $(link).attr("href", url + data['id']);
                 $(link).attr("title", data['title']);
                 $(link).text(data['title']);

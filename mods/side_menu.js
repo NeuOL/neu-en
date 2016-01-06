@@ -1,12 +1,11 @@
 var sideMenuList = $('.sidebar-content ul');
-
 // fix
 var host = 'http://202.118.1.138';
 var items = {
     news: [
         {name: "News & Events", href: [ host + "/news.html", host + "/news.html#", host + "/detail.html?news" ]},
         {name: "Media", href: [ host + "/media.html", host + "/media.html#", host + "/detail.html?media" ]},
-        {name: "International Conferences", href: [ host + "/international.html", host + "/international.html#", host + "/detail.html?international" ]}
+        {name: "Research", href: [ host + "/international.html", host + "/international.html#", host + "/detail.html?international" ]}
     ],
     about: [
         {name: 'General Information', href: [host + "/aboutNEU.html"]},
@@ -14,16 +13,16 @@ var items = {
                                         host + "/ZhangSiying.html", host + "/LuZhongwu.html",
                                         host + "/ChaiTianyou.html", host + "/WangGuodong.html",
                                         host + "/School_Lesson_song.html"]},
-        {name: 'Campus Pictures', href: [ "http://90.neu.edu.cn/plus/list.php?tid=33"]},
+        // {name: 'Campus Pictures', href: [ "http://90.neu.edu.cn/plus/list.php?tid=33"]},
         {name: 'University Badge,Motto&Anthem', href: [host + "/School_Lesson_song.html"]},
         {name: 'Campus Map', href: ["http://office.neu.edu.cn/wp-content/uploads/2012/03/%E4%B8%9C%E5%8C%97%E5%A4%A7%E5%AD%A6%E5%B9%B3%E9%9D%A2%E5%9B%BE0.jpg"]}
     ],
     college: [
         {name: '(East campus) General School', href: [ host + "/GS.html" ]},
         {name: 'School of Humanities and Law', href: [ host + "/HAL.html" ]},
-        {name: 'Foreign Studies College (FSC)', href: [ host + "/fsc.html" ]},
+        {name: 'Foreign Studies College', href: [ host + "/fsc.html" ]},
         {name: 'College of Arts', href: [ host + "/art.html" ]},
-        {name: 'School of Business Administration (SBA)', href: [ host + "/SBA.html" ]},
+        {name: 'School of Business Administration', href: [ host + "/SBA.html" ]},
         {name: 'The College of Sciences', href: [ host + "/S.html" ]},
         {name: 'College of Resources and Civil Engineering', href: [ host + "/RCE.html" ]},
         {name: 'School of Materials and Metallurgy', href: [ host + "/MM.html" ]},
