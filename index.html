@@ -181,7 +181,9 @@
                     var target = $(".tsh-inner-"+i+" p");
                     var str = target.text();
                     if(str.length > previewMaxLength) {
-                        str = str.substr(0, 128);
+                       for(var j = 128; j <= str.length; j++) {
+                            if(str[j] == " ") str = str.substr(0, j);
+                        }
                         str += dots;
                         console.log(str);
                         target.text(str);
