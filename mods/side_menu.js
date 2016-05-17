@@ -1,6 +1,6 @@
 var sideMenuList = $('.sidebar-content ul');
 // fix
-var host = 'http://202.118.1.138';
+var host = 'http://localhost/neu-en';
 var items = {
     news: [
         {name: "News & Events", href: [ host + "/news.html", host + "/news.html#", host + "/detail.html?news" ]},
@@ -35,8 +35,11 @@ var items = {
         {name: 'School of International Exchange', href: [ host + "/IE.html" ]}
     ],
     alumni:[
-        {name: 'Northeastern University Alumni Association', href:[host + "/Alumni_Association.html"]},
+        {name: 'External Liaison and Cooperation Department', href:[host + "/External_Liaison&Cooperation_Department.html"]},
+        {name: 'Alumni Association', href:[host + "/Alumni_Association.html"]},
+        {name: 'Board Of Trustees', href:[host + "/Board_of_Trustees.html"]},
         {name: 'H. L. Chang Education Foundation', href:[host + "/foundation.html"]}
+        
     ],
     talentsrecruitment:[
         {name: '1000-Talents Plan', href:[host + "/1000_Talents_Plan.html"]},
@@ -57,14 +60,25 @@ var items = {
         {name: 'Doctoral Degree Authorization Discipline', href:[host + "/Doctoral-Degree.html"]},
         {name: 'Master Degree Authorization Discipline', href:[host + "/Master-Degree.html"]},
         {name: 'The Development of Scientific Research', href:[host + "/scientific_research.html"]},
-        {name: 'National Awards for Science and Technology', href:[host + "/research_outcomes.html"]},
+        {name: 'Scientific Research Base', href:[host + "/research_base.html"]},
+        {name: 'Achievements in Scientific Research', href:[host + "/research_outcomes.html"]},
         {name: 'Key Laboratory', href:[host + "/KList.html",
                                        host + "/key1.html",
                                        host + "/key2.html",
                                        host + "/key3.html",
                                        host + "/key4.html",
                                        host + "/key5.html",
-                                       host + "/key6.html"
+                                       host + "/key6.html",
+                                       host + "/key7.html",
+                                       host + "/key8.html",
+                                       host + "/key9.html",
+                                       host + "/key10.html",
+                                       host + "/key11.html",
+                                       host + "/key12.html",
+                                       host + "/key13.html",
+                                       host + "/key14.html",
+                                       host + "/key15.html",
+                                       host + "/key16.html"
                                        ]
         },
         {name: 'Research Center', href:[host + "/rList.html",
@@ -73,7 +87,10 @@ var items = {
                                         host + "/center3.html",
                                         host + "/center4.html",
                                         host + "/center5.html",
-                                        host + "/center6.html"
+                                        host + "/center6.html",
+                                        host + "/center7.html",
+                                        host + "/center8.html",
+                                        host + "/center9.html"
         ]}
     ]
 }

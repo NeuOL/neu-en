@@ -181,7 +181,12 @@
                     var target = $(".tsh-inner-"+i+" p");
                     var str = target.text();
                     if(str.length > previewMaxLength) {
-                        str = str.substr(0, 128);
+                       for(var j = 128; j < str.length; j++) {
+                            if(str[j] == " ") {
+                                str = str.substr(0, j);
+                                break;
+                            }
+                        }
                         str += dots;
                         console.log(str);
                         target.text(str);
@@ -191,7 +196,13 @@
                     var target = $(".tsh-inner-"+i+" h3");
                     var str = target.text();
                     if(str.length > titleMaxLength) {
-                        str = str.substr(0, 88);
+                        for(var j = 87; j < str.length; j++) {
+                            if(str[j] == " ") {
+                                str = str.substr(0, j);
+                                break;
+                            }
+                        }
+                        // str = str.substr(0, 88);
                         str += dots;
                         console.log(str);
                         target.text(str);
