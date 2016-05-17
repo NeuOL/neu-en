@@ -78,7 +78,9 @@ var items = {
                                        host + "/key13.html",
                                        host + "/key14.html",
                                        host + "/key15.html",
-                                       host + "/key16.html"
+                                       host + "/key16.html",
+                                       host + "/key17.html"
+
                                        ]
         },
         {name: 'Research Center', href:[host + "/rList.html",
@@ -90,7 +92,6 @@ var items = {
                                         host + "/center6.html",
                                         host + "/center7.html",
                                         host + "/center8.html",
-                                        host + "/center9.html"
         ]}
     ]
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>Northeastern University</title>
+    <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+    <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+<div id="top-banner">
+    <div class="wrapper">
+        <div id="search-box" style="display: inline-block;">
+            <!--<form style="padding:20px 0">
+                <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+            </form>-->
+        </div>
+        <div>
+            <img src="assets/img/logo.png" id="logo-img"/>
+            <img src="assets/img/uname.png" id="uname-img"/>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <!--#include virtual="include/header.html" -->
+    <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+</div>
+<div class="clearfix" id="main-body">
+    <div class="sidebar">
+        <div class="bottom-gradient-1"></div>
+        <div class="sidebar-content">
+            <ul>
+            </ul>
+            <div class="bottom-gradient-2"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="main-text">
+            <!--文章开始-->
+            <h1>Research Center</h1>
+            <div>
+                <h2 style="text-align:center; padding-top:10px; margin-bottom: 10px;">Introduction of advanced management research center of Northeasten University</h2>
+                <div id="detail">
+                    <div>
+                        <p>
+                        <strong>Center name:</strong> Advanced management research center of Northeasten University<br />
+                        <strong>Supporting uinversity:</strong> Northeasten University<br />
+                        <strong>Supporting discipline:</strong> Management science and engeerning<br />
+                        <strong>Center director:</strong> Zhi-Ping Fan Prof.</p>
+                        <p><strong>Academic Procession:</strong> There are more than 30 researchers in the research center, including 1 special professor and 1 visiting professor of the Chang Jiang Scholar Program of the Ministry of Education, 1 recipient of the National Science Fund for Distinguished Young Scholars, 4 winners of the New Century Excellent Talents Supporting Plan of the Ministry of Education, 4 members of “hundred level” of Hundred, Thousand and Ten Thousand Talent Project of Liaoning Province and 4 abroad PhDs.</p>
+                        <p><strong>Research characteristics and directions:</strong> In recent years, following the latest international research directions and paying attentions to the problems in Chinese management practice, the research center has formed several clear, stable and advantage research directions. The main research directions include: Logistics and supply chain management, Infomation management and e-commerce, Big data management and decision-making, Service operations and management, and Industrial engineering, etc.</p>
+                        <p><strong>Symbolic achievements:</strong> In the last five years, the research center has completed or undertaken 26 projects supported by the National Natural Science Foundation of China and more than 40 research projects supported by provinces and ministrys, and gained more than 3 minllions research funds a year. The research center has won 5 prizes for Humanities and Social Sciences Award of the provinces and ministrys and published 15 books. The research center published more than 100 academic papers a year, in which near 20 papers are published in the SCI indexed international journals. The symbolic papers have been published in important academic journals such as European Journal of Operational Research, International Journal of Production Research, Computers & Industrial Engineering, Computers & Operations Research, International Journal of Production Economics, Journal of the Operatonal Resaerch Society, Information Sciences, etc.</p>
+                        <p><strong>Main social effect:</strong> In the last five years, in the aspect of social service and achievement transformation, by collaborating with enterprises such as Baosteel Group, Shougang Group and Shandong Gold Group, the research center has completed more than 10 enterprise consulting projects and has achieved great economic benefit and social benefit. In the aspect of talent training, the research center trained near 10 PhDs in Management science and engeerning a year, and trained more than 80 masters in Management science and engeerning, Industrial engineering, Logistics Engineering, and Project management. In the graduate students, 1 student has won the Excellent Doctoral Dissertation Award (including the Nomination Award) and 6 students have won the Excellent Master Dissertation Award (including the Nomination Award).</p>
+
+                    </div>
+                </div>
+            </div>
+            <!--文章结束-->
+        </div>
+    </div>
+    <!--<div style="height: 800px;margin-bottom: 20px;">-->
+    <!--</div>-->
+</div>
+<!--#include virtual="include/footer.html" -->
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script type="text/javascript" src="libs/superfish.min.js"></script>
+<script type="text/javascript" src="mods/side_menu.js"></script>
+<script type="text/javascript">
+    (function($){
+
+        $(document).ready(function(){
+            var example = $('.navbar').superfish({
+                //配置
+                hoverClass:    'sfHover',
+                popUpSelector:  'ul,.subnav',
+                pathLevels: 1,
+                cssArrows:  false
+            });
+        });
+    })(jQuery);
+</script>
+</body>
+</html>
