@@ -131,7 +131,8 @@ a:hover, a:active{
      float: right;
      font-size: 14px;
      font-weight: bold;
-     line-height: 18px;
+     line-height: 21px;
+     height: 21px;
 }
 .panel-top .more a{
     color: #a0224e;

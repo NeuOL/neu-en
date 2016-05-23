@@ -53,10 +53,10 @@ var items = {
         {name: 'Study in NEU', href:["http://www.sie.neu.edu.cn/en/index.asp"]}
     ],
     subject_reseach:[
-        {name: 'Disciplinary Introduction', href:[host + "/Disciplinary-introduction.html"]},
-        {name: 'Key Construction', href:[host + "/key_construction.html"]},
-        {name: 'National Key Discipline', href:[host + "/National-Key-Discipline.html"]},
-        {name: 'Provincial Key Discipline', href:[host + "/Provincial-Key-Discipline.html"]},
+        {name: 'Key Disciplines', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=10"]},
+        {name: 'Degree Programs', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=11"]},
+        {name: 'Academicians of NEU', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=12"]},
+        {name: 'Key Construction', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=13"]},
         {name: 'Doctoral Degree Authorization Discipline', href:[host + "/Doctoral-Degree.html"]},
         {name: 'Master Degree Authorization Discipline', href:[host + "/Master-Degree.html"]},
         {name: 'The Development of Scientific Research', href:[host + "/scientific_research.html"]},

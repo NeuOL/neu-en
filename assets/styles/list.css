@@ -158,7 +158,7 @@ a:hover, a:active{
     display: inline-block;
     width: 80%;
     /*width: expression(100% - 120px);*/
-    width:calc(95% - 120px);
+    width:calc(95% - 75px);
     overflow: hidden;
     word-break: keep-all;
     white-space: nowrap;
