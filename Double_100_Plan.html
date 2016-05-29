@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+        <title>Northeastern University</title>
+        <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    </head>
+    <body>
+        <div id="top-banner">
+            <div class="wrapper">
+                <div id="search-box" style="display: inline-block;">
+                    <!--<form style="padding:20px 0">
+                        <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+                    </form>-->
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" id="logo-img"/>
+                    <img src="assets/img/uname.png" id="uname-img"/>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <!--#include virtual="include/header.html" -->
+            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        </div>
+        <div class="clearfix" id="main-body">
+           <div class="sidebar">
+                    <div class="bottom-gradient-1"></div>
+                    <div class="sidebar-content">
+                        <ul>
+                        </ul>
+                        <div class="bottom-gradient-2"></div>
+                    </div>
+                </div>
+            <div class="wrapper">
+                <div id="main-text">
+                    <!--文章开始-->
+                    <h1>Northeastern University, "Double Hundred Plan"<br />(Hiring Foreign Teachers of Professional Courses)</h1>
+                    <div>
+                    <h3>Disciplinary Fields</h3>
+                    <p>Basic courses, automation, civil engineering, mechanical, computer course</p>
+                    <h3>Requirements</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>Basic requirements: Abide by the relevant laws, regulations and    rules and regulations of the People's Republic of China. With strong professional quality, team consciousness and collective idea and dedication. to be able to consciously abide by the academic ethics and norms with Ph. D. degree; healthy, qualified for the position.</li>
+                        <li>The requirement of the age: those who have finished their postdoctoral research and Ph.D graduates should be or under 35; associate professors should be or under 55; professors should be or under 65.</li>
+                        <li>Other requirements: All the degrees must be obtained from high level universities in foreign countries, and be able to teach in English.</li>
+                    </ol>
+                    <br />
+                    <h3>Responsibilities</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>The responsibilities of professors: responsible for undergraduate teaching and graduate training, guiding or hosting scientific projects, publishing high level academic papers; understand and identify the developing direction of the discipline, promote international cooperation and exchanges, conduct young teachers’ training, discipline construction, echelon construction and laboratory construction.</li>
+                        <li>The responsibilities of associate professors:<br />
+                        As the backbone of discipline echelon construction, undertake the task of undergraduate teaching and graduate training, host or  participate in research projects, publish high level academic papers, promote international cooperation and exchanges, participate in discipline construction and laboratory construction
+                        </li>
+                        <li>The responsibilities of Lecturers: undertake undergraduate teaching tasks  participate in scientific research as the backbone of the discipline echelon force, publish academic papers of certain level,  promote international cooperation and exchanges, participate in the discipline construction and laboratory construction.</li>
+                    </ol>
+                    <br />
+                    <h3>Recruitment Procedure</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>The applicant who has worked as a professor (or equivalent position) in foreign high-level universities, research institutions, enterprises can be  employed as a professor directly.</li>
+                        <li>The applicant who has worked as  an associate professor in foreign high-level universities, research institutions, enterprises can be  employed as an associate professor directly.</li>
+                        <li>Those who have finished their postdoctoral research and Ph.D graduates, can be directly employed as a lecturer.</li>
+                        <li>If an applicant whose original position is an associate professor (or equivalent position) applies to be promoted as professors, and if an applicant who has finished his or her postdoctoral research or a Ph. D. graduate applies to be promoted as a professor or an associate professor, their applications will be determined through correspondence review and meeting review.</li>
+                    </ol>
+                    <br />
+                    <h3>Relevant Treatment</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>The salary of foreign teachers who are employed as professors  is generally between 300,000 and 700,000 (RMB, hereinafter the same) per year; associate professors generally between 200,000 and 400,000 RMB per year; lecturers generally between 100,000 and 200,000 RMB per year. The specific standard will be determined by the university and employment unit based on mutual discussions according to the teachers’ qualifications, academic level and their tasks in teaching and scientific research.</li>
+                        <li>The salary of the foreign teachers is under the annual salary system, and is paid monthly.</li>
+                        <li>Foreign teachers need to pay the individual income tax according to the individual income tax law of the People's Republic of China, the university will assist the teachers in paying individual income tax by cutting it from their salary according to relevant provisions.</li>
+                        <li>School will purchase medical and accident insurance for employed foreign teachers according to the state and local government policies.</li>
+                    </ol>
+                    </div>
+                    <!--文章结束-->
+                </div>
+            </div>
+            <!--<div style="height: 800px;margin-bottom: 20px;">-->
+            <!--</div>-->
+        </div>
+        <div id="return_button" style="width: 50px; height: 50px; padding: 0; right: 10px; bottom: 150px; position: fixed;">
+            <a href="#"><img src="assets/img/return.png" alt="return" width="50" height="50" /></a>
+        </div>
+        <!--#include virtual="include/footer.html" -->
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="mods/side_menu.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="renderer" content="webkit">
+        <title>Northeastern University</title>
+        <link href="assets/styles/normalize.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/detail.css" type="text/css" rel="stylesheet"/>
+        <link href="assets/styles/superfish.css" type="text/css" rel="stylesheet"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+    </head>
+    <body>
+        <div id="top-banner">
+            <div class="wrapper">
+                <div id="search-box" style="display: inline-block;">
+                    <!--<form style="padding:20px 0">
+                        <input type="text" name="search" style="border:0;padding:3px;height:20px;width:140px;color:#FFF;background-color: #5376aa;"/><button type="submit" name="fff" style="border:0;height: 26px;background-color: #EEE;">search</button>
+                    </form>-->
+                </div>
+                <div>
+                    <img src="assets/img/logo.png" id="logo-img"/>
+                    <img src="assets/img/uname.png" id="uname-img"/>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <!--#include virtual="include/header.html" -->
+            <div id="banner-img"><img src="assets/img/detail_banner.png" style="width:100%;"/></div>
+        </div>
+        <div class="clearfix" id="main-body">
+           <div class="sidebar">
+                    <div class="bottom-gradient-1"></div>
+                    <div class="sidebar-content">
+                        <ul>
+                        </ul>
+                        <div class="bottom-gradient-2"></div>
+                    </div>
+                </div>
+            <div class="wrapper">
+                <div id="main-text">
+                    <!--文章开始-->
+                    <h1>National “Thousand Young Talents Plan” Project<br />(Northeastern University “Hundred Overseas Talents Plan”)</h1>
+                    <div>
+                    <h3>Disciplinary Fields</h3>
+                    <p>Natural Science, Engineering Technology</p>
+                    <h3>Qualifications</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>Candidates should be below the age of 40.</li>
+                        <li>Candidates should possess a Ph.D degree granted by prestigious overseas universities and have at least 3 years of overseas research experience.</li>
+                        <li>Candidates should have formal teaching and researching positions in overseas prestigious universities, institutions or enterprises.</li>
+                        <li>Candidates should have the abilities of developing originality and researching in major theories, practical problems and key fields, of shouldering the major national scientific and research tasks and making prominent achievements; should be the top talent among his or her even-aged colleagues in research field and have the potential of becoming leading academic and technical figures in the future.</li>
+                        <li>Those fresh graduates who have made outstanding achievements during his or her Ph.D study or other excellent candidates can be recruited in exceptional cases, like age, position time, etc.</li>
+                    </ol>
+                    <br />
+                    <h3>Recruitment Procedure</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>Applicants, as the candidates of “Thousand Young Talents Plan”, will be reported to the Ministry of Education to participate in the review.</li>
+                        <li>Applicants who pass the review will be recruited by the Northeastern University as young distinguished professors of "Hundred Overseas Talents Plan".</li>
+                        <li>Applicants who fail the review will be judged again by the university in academic aspects. Once passed, the applicants will be recruited as young distinguished associate professors of "Hundred Overseas Talents Plan".</li>
+                    </ol>
+                    <br />
+                    <h3>Preferential Treatments</h3>
+                    <ol style="padding-left: 20px;">
+                        <li>The young distinguished professors and associate professors of “Hundred Overseas Talents Plan” will be doctoral supervisors.</li>
+                        <li>The recruited talents in this plan will be annually paid with 350,000 RMB for young distinguished professors and 250,000 RMB for young distinguished associate professors.</li>
+                        <li>Northeastern University will afford the necessities of life and scientific research for the recruited talents: the apartment-purchase subsidy of at least 600,000 RMB (paid monthly) and the scientific research funding of at least 2,000,000 RMB (lump-sum payment) for young distinguished professor; the apartment-purchase subsidy of at least 500,000 RMB (paid monthly) and the scientific research funding of at least 800,000 RMB (lump-sum payment) for young distinguished associate professor.</li>
+                        <li>Northeastern University will preferentially support the recruited talents to join the team led by the high-level talents, like academicians of the Chinese Academy of Sciences and the Chinese Academy of Engineering, the professors of Yangtze River Scholar Program, the receiver of national science fund for distinguished young scholars, etc. Meanwhile, Northeastern University will support them to create innovative and academic teams in interdisciplinary and emerging branches.</li>
+                        <li>Young distinguished associate professors can apply for professorship during his or her employment term.</li>
+                    </ol>
+                    <br />
+                    <h3>The Date of Application</h3>
+                    <p>Please contact us at any time. The annual exact date for application is on national notice which shall prevail. Please pay attention to the national website of "Thousand Talents Plan": <a href="http://www.1000plan.org/qrjh/section/2" style="color: #233192; text-decoration: underline;">http://www.1000plan.org/qrjh/section/2</a>.</p>
+                    </div>
+                    <!--文章结束-->
+                </div>
+            </div>
+            <!--<div style="height: 800px;margin-bottom: 20px;">-->
+            <!--</div>-->
+        </div>
+        <!--#include virtual="include/footer.html" -->
+        <div id="return_button" style="width: 50px; height: 50px; padding: 0; right: 10px; bottom: 150px; position: fixed;">
+            <a href="#"><img src="assets/img/return.png" alt="return" width="50" height="50" /></a>
+        </div>
+        <script type="text/javascript" src="libs/jquery.min.js"></script>
+        <script type="text/javascript" src="libs/superfish.min.js"></script>
+        <script type="text/javascript" src="mods/side_menu.js"></script>
+        <script type="text/javascript">
+            (function($){
+
+            $(document).ready(function(){
+                var example = $('.navbar').superfish({
+                    //配置
+                    hoverClass:    'sfHover',
+                    popUpSelector:  'ul,.subnav',
+                    pathLevels: 1,
+                    cssArrows:  false
+                });
+            });
+        })(jQuery);
+        </script>
+    </body>
+</html>

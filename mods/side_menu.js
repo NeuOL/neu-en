@@ -42,10 +42,14 @@ var items = {
         
     ],
     talentsrecruitment:[
-        {name: '1000-Talents Plan', href:[host + "/1000_Talents_Plan.html"]},
-        {name: 'Overseas 100-Talents Plan', href:[host + "/100_Talents_Plan.html"]},
-        {name: 'Double-100 Plan', href:[host + "/Double-100_Plan.html"]},
-        {name: 'Other Talents', href:[host + "/OtherTalents.html"]}
+        {name: 'Thousand Talents Plan', href:[host + "/1000_Talents_Plan.html"]},
+        {name: 'The Yangtze River Scholar Program', href:[host + "/Yangtze_Program.html"]},
+        {name: 'The National Science Fund for Distinguished Young Scholars', href:[host + "/Young_Scholars.html"]},
+        {name: 'Ten Thousand Talents Project', href:[host + "/10000_Talents_Plan.html"]},
+        {name: 'Thousand Young Talents Plan', href:[host + "/1000_Young_Plan.html"]},
+        {name: 'Young Scholars of "The Yangtze River Scholar Program"', href:[host + "/Young_Yangtze_Program.html"]},
+        {name: 'The National Postdoctoral International Exchange Program', href:[host + "/Exchange_Program.html"]},
+        {name: 'Double Hundred Plan', href:[host + "/Double_100_Plan.html"]}
     ],
     exchange:[
         {name: 'Long-term Students Exchange Program', href:[host + "/Students-Exchange.html"]},
