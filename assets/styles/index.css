@@ -71,8 +71,8 @@ a:hover, a:active{
 #news-1{
     margin: 0 auto;
     /*width: 80%;*/
-    max-width: 1024px;
-    width:expression(document.body.clientWidth>1023?"1024px":"auto");
+    width: 1024px;
+    /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
 }
 /*第三列*/
 .three-same-height-3{
@@ -183,8 +183,8 @@ a:hover, a:active{
     height: 80px;
     overflow: hidden;
     text-decoration: none;
-    text-align: justify;
-    word-break: break-all;
+    /*text-align: justify;*/
+
 }
 .news-block .text a:hover h3{
     text-decoration: underline;
@@ -195,10 +195,10 @@ a:hover, a:active{
 .news-pic-block{
      height: auto;
      overflow: hidden;
-     width: 100%;
+     /*width: 100%;*/
      margin: 10px auto;
-    max-width: 1024px;
-    width:expression(document.body.clientWidth>1023?"1024px":"auto");
+    width: 1024px;
+    /*width:expression(document.body.clientWidth>1023?"1024px":"auto");*/
 }
 .news-list-block{
     width: auto;

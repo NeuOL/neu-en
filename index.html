@@ -170,7 +170,7 @@
                 //     target.text(str)
                 // }
                 var titleMaxLength = 90;
-                var previewMaxLength = 130;
+                var previewMaxLength = 122;
                 var dots = '...';
                 for(var i = 1; i <= 3; i++ ) {
                     var link = $(".tsh-inner-"+i+" a");
@@ -181,7 +181,7 @@
                     var target = $(".tsh-inner-"+i+" p");
                     var str = target.text();
                     if(str.length > previewMaxLength) {
-                       for(var j = 128; j < str.length; j++) {
+                       for(var j = 120; j < str.length; j++) {
                             if(str[j] == " ") {
                                 str = str.substr(0, j);
                                 break;
