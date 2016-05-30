@@ -1,6 +1,6 @@
 var sideMenuList = $('.sidebar-content ul');
 // fix
-var host = 'http://localhost/neu-en';
+var host = 'http://english.neu.edu.cn';
 var items = {
     news: [
         {name: "News & Events", href: [ host + "/news.html", host + "/news.html#", host + "/detail.html?news" ]},
