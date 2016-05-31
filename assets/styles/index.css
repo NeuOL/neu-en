@@ -143,7 +143,7 @@ a:hover, a:active{
 }
 .news-block{
     margin-left: 70px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
 }
 .news-block h3 {
     margin-bottom: 10px;
