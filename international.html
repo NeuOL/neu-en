@@ -29,7 +29,7 @@
         })(jQuery);
         </script>
     </head>
-    <body onload="init()">
+    <body>
         <div id="top-banner">
             <div class="wrapper">
                 <div id="search-box" style="display: inline-block;">
@@ -72,6 +72,11 @@
         <!--#include virtual="include/footer.html" -->
         <script type="text/javascript" src="./mods/side_menu.js"></script>
         <script type="text/javascript">
+        function init() {
+            $('#previous_page').hide();
+            $('#next_page').hide();
+        }
+        init();
         var currentPage = 0;
           $.support.cors = true;
         var loading_icon = $('#loading');
@@ -136,10 +141,6 @@
             $(list).appendTo(container);
         }
         function addToList(data, list) {
-        }
-        function init() {
-            $('#previous_page').hide();
-            $('#next_page').hide();
         }
         function nextPage() {
             currentPage++;

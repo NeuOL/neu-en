@@ -61,8 +61,6 @@ var items = {
         {name: 'Degree Programs', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=11"]},
         {name: 'Academicians of NEU', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=12"]},
         {name: 'Key Construction', href:["http://xkjs.neu.edu.cn/english/EnAction_toTypePage?typeId=13"]},
-        {name: 'Doctoral Degree Authorization Discipline', href:[host + "/Doctoral-Degree.html"]},
-        {name: 'Master Degree Authorization Discipline', href:[host + "/Master-Degree.html"]},
         {name: 'The Development of Scientific Research', href:[host + "/scientific_research.html"]},
         {name: 'Scientific Research Base', href:[host + "/research_base.html"]},
         {name: 'Achievements in Scientific Research', href:[host + "/research_outcomes.html"]},

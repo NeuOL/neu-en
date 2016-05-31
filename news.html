@@ -29,7 +29,7 @@
         })(jQuery);
         </script>
     </head>
-    <body onload="init()">
+    <body>
         <div id="top-banner">
             <div class="wrapper">
                 <div id="search-box" style="display: inline-block;">
@@ -72,11 +72,16 @@
         <!--#include virtual="include/footer.html" -->
         <script type="text/javascript" src="./mods/side_menu.js"></script>
         <script type="text/javascript">
+        function init() {
+            $('#previous_page').hide();
+            $('#next_page').hide();
+        }
+        init();
         var currentPage = 0;
 	      $.support.cors = true;
         var loading_icon = $('#loading');
         var refresh_icon = $('#refresh');
-        $(refresh).click(function() {
+        $(refresh_icon).click(function() {
             $(refresh_icon).hide();
             fetch({
             url: 'http://neunews.neu.edu.cn/api.php?action=lists&num=20&cid=7&page=' + currentPage
@@ -111,12 +116,12 @@
             var list = document.createElement("ul");
             $(list).attr("id", "news_list");
             //$("#news_list").remove();
-            for(var i = 0; i < ret.length; i++) {
                 if(ret.length < 20) {
                     $('#next_page').hide();
                 } else {
                     $('#next_page').show();
                 }
+            for(var i = 0; i < ret.length; i++) {
                 var data = ret[i];
                 var piece = document.createElement("li");
                 var date = document.createElement("span");
@@ -136,10 +141,6 @@
             $(list).appendTo(container);
         }
         function addToList(data, list) {
-        }
-        function init() {
-            $('#previous_page').hide();
-            $('#next_page').hide();
         }
         function nextPage() {
             currentPage++;
